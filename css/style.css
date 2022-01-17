@@ -1,0 +1,71 @@
+body{
+	background-color: ivory;
+	font-style: roboto;
+}
+
+.html-left{
+	width: 50%;
+}
+.html-left h2{
+	font-size: 100px;
+	font-weight: 650;
+
+}
+.html-right{
+	width: 50%;
+}
+
+.quote .card{
+	border: 2px dotted #123C69;
+	border-radius: 50px;
+	overflow: hidden;
+	box-shadow: 5px 5px 12px #BAB2B5;
+}
+.quote .card-body{
+	background-color: #EEE2DC;
+	color: #123C69;
+}
+.quote .card-header{
+	background-color: #EDC7B7;
+	color: #AC3B61;
+	font-size: 32px;
+}
+
+.cards .card{
+	height: 300px;
+	border: 2px solid #AC3B61;
+	box-shadow: 5px 5px 12px #BAB2B5;
+	border-radius: 120px 8px;
+	overflow: hidden;
+}
+.cards .card:hover{
+	transform: scale(1.1);
+	transition: 0.4s ease;
+}
+.card-title{
+	font-size: 100px;
+	font-weight: 450;
+	text-shadow: 4px 4px 8px #BAB2B5;
+}
+.card-text{
+	color: #123C69;
+	font-size: 22px;
+}
+.buton{
+	background-color: #BAB2B5;
+	border: 1.5px solid #AC3B61;
+	color: #123C69;
+	box-shadow: 2px 2px 5px grey;
+}
+.buton:hover{
+	background-color: #AC3B61;
+	border: 1.5px solid #123C69;
+	color: #BAB2B5;
+	box-shadow: -2px -2px 5px lightgreen;
+	transform: scale(1.8);
+	transition: 0.4s ease;
+}
+.cards .card-body{
+	background: linear-gradient(#EDC7B7, #EEE2DC);
+	color: #AC3B61;
+}
