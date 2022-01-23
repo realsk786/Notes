@@ -59,107 +59,857 @@
 
 
 	<h1 class="text-center m-5">CSS NOTES</h1>
-
+<div class="container">
 	<div id="accordion">
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
         Introduction to CSS
       </a>
     </div>
     <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
       <div class="card-body">
-        <p>Lorem Ipsum</p>
+        <p>
+          <pre>
+            CSS is the language we use to style a Web page.
+
+            What is CSS?
+            CSS stands for Cascading Style Sheets
+            CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+            CSS saves a lot of work. It can control the layout of multiple web pages all at once
+            External stylesheets are stored in CSS files
+
+            Why Use CSS?
+            CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+            CSS Solved a Big Problem
+            HTML was NEVER intended to contain tags for formatting a web page!
+
+            HTML was created to describe the content of a web page, like:
+
+            &lt;h1>This is a heading&lt;/h1>
+
+            &lt;p>This is a paragraph.&lt;/p>
+
+            When tags like &lt;font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+            To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+            CSS removed the style formatting from the HTML page!
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-        History of CSS
+        CSS Syntax, Selector
       </a>
     </div>
     <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        <p>Lorem Ipsum</p>
+        <p>
+          <pre>
+            CSS Syntax
+            - The selector points to the HTML element you want to style.
+            - The declaration block contains one or more declarations separated by semicolons.
+            - Each declaration includes a CSS property name and a value, separated by a colon.
+            - Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+
+            CSS Selectors
+            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+            We can divide CSS selectors into five categories:
+
+            Simple selectors (select elements based on name, id, class)
+            Combinator selectors (select elements based on a specific relationship between them)
+            Pseudo-class selectors (select elements based on a certain state)
+            Pseudo-elements selectors (select and style a part of an element)
+            Attribute selectors (select elements based on an attribute or attribute value)
+            This page will explain the most basic CSS selectors.
+
+            The CSS element Selector
+            The element selector selects HTML elements based on the element name.
+
+            The CSS id Selector
+            The id selector uses the id attribute of an HTML element to select a specific element.
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+            The CSS class Selector
+            The class selector selects HTML elements with a specific class attribute.
+            To select elements with a specific class, write a period (.) character, followed by the class name.
+
+            The CSS Universal Selector
+            The universal selector (*) selects all HTML elements on the page.
+
+            The CSS Grouping Selector
+            The grouping selector selects all the HTML elements with the same style definitions.
+          </pre>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-         Features of CSS
+         Colors
       </a>
     </div>
     <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        <pre>Lorem Ipsum
-		</pre>
+        <p>
+          <pre>
+            Colors:- 
+             - Colors are specified using predefined color names
+               or color values
+               
+            Color values
+            RGB   -> Red, Green, Blue
+            RGBA  -> Red, Green, Blue, Alpha
+            HSL   -> Hue, Saturation, Lightness
+            HSLA  -> Hue, Saturation, Lightness, Alpha
+            HEX   -> Hexadecimal numbers
 
-			
+            Alpha -> Transperancy
+                -> 0 -> Transperant
+                -> 1 -> Not Transperant
+                
+                &lt;h1 style="color:rgba(255, 0, 0, 1); background-color : orange">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 1)">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 0.8)">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 0.6); background-color: rgba(0,255,0,0.8);">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 0.4)">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 0.2)">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgba(255, 0, 0, 0)">Observe This color&lt;/h1>
+                    &lt;h1>Observe This color&lt;/h1>
+                    &lt;h1 style="color:red">Observe This color&lt;/h1>
+                    &lt;h1 style="color:rgb(255, 0, 0)">Observe This color&lt;/h1>
+                    &lt;h1 style="color:hsl(0, 100%, 50%)">Observe This color&lt;/h1>
+                    &lt;h1 style="color: #ff0000;">Observe This color&lt;/h1>
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
-         Four
+         Text formatting, Text shadows
       </a>
     </div>
     <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            CSS Text formatting
+            color
+             - color property is used to set color of text.
+             
+            text alignment
+             - 'text-align' property is used to set horizontal
+               alignment of text
+             - values are left, right, center, justify
+             
+            Eg  text-align : center
+              text-align : left / start
+                     : right  /end
+                     : justify
+
+
+
+
+
+                        .lft
+                        {
+                            text-align: left;
+                        }
+                        .ctr
+                        {
+                            text-align: center;
+                        }
+                        .rt
+                        {
+                            text-align: right;
+                        }
+                        .jst
+                        {
+                            text-align: justify;
+                        }
+
+
+                    &lt;p class="lft">No tempor sadipscing kasd magna invidunt est lorem magna, no vero amet gubergren et rebum sed, eos nonumy sed at rebum sit kasd eirmod stet. Diam gubergren lorem elitr dolor. Sadipscing elitr et stet takimata dolor at sit aliquyam sea. Nonumy gubergren sed consetetur diam rebum. Lorem stet no stet nonumy ea dolor erat duo, at sadipscing stet eos justo et, et et sit et diam nonumy ut sed. Elitr justo sadipscing dolore takimata, nonumy vero takimata takimata dolores, aliquyam ut eirmod ut sit ipsum sed rebum. Dolores ipsum sea dolor clita amet et sed. Clita sadipscing amet sit stet et aliquyam amet voluptua, elitr sit dolor duo et ipsum clita dolor clita. Sadipscing et ea sadipscing ea. Dolor elitr justo rebum gubergren dolores sed, eirmod amet elitr erat sed. Duo invidunt sit sanctus duo et vero sed. Takimata est diam invidunt sed dolore sanctus sit diam clita. Et clita et et ut. Dolore clita eirmod no ut amet magna. Sed justo ea eos sea dolores diam duo sit eirmod. Lorem amet invidunt amet rebum takimata, voluptua ipsum amet invidunt et, amet est dolor diam sed no, aliquyam amet ipsum sea lorem et lorem magna dolores, rebum et justo voluptua ipsum magna. Tempor nonumy justo takimata rebum elitr invidunt, ipsum kasd et sanctus aliquyam dolore diam, kasd eos diam ea sed diam takimata amet. Stet dolore nonumy amet consetetur invidunt dolor sit elitr, at elitr nonumy stet justo lorem erat tempor sit stet. Dolor kasd accusam nonumy eos, dolor eirmod.&lt;/p>
+                    &lt;p class="ctr">No tempor sadipscing kasd magna invidunt est lorem magna, no vero amet gubergren et rebum sed, eos nonumy sed at rebum sit kasd eirmod stet. Diam gubergren lorem elitr dolor. Sadipscing elitr et stet takimata dolor at sit aliquyam sea. Nonumy gubergren sed consetetur diam rebum. Lorem stet no stet nonumy ea dolor erat duo, at sadipscing stet eos justo et, et et sit et diam nonumy ut sed. Elitr justo sadipscing dolore takimata, nonumy vero takimata takimata dolores, aliquyam ut eirmod ut sit ipsum sed rebum. Dolores ipsum sea dolor clita amet et sed. Clita sadipscing amet sit stet et aliquyam amet voluptua, elitr sit dolor duo et ipsum clita dolor clita. Sadipscing et ea sadipscing ea. Dolor elitr justo rebum gubergren dolores sed, eirmod amet elitr erat sed. Duo invidunt sit sanctus duo et vero sed. Takimata est diam invidunt sed dolore sanctus sit diam clita. Et clita et et ut. Dolore clita eirmod no ut amet magna. Sed justo ea eos sea dolores diam duo sit eirmod. Lorem amet invidunt amet rebum takimata, voluptua ipsum amet invidunt et, amet est dolor diam sed no, aliquyam amet ipsum sea lorem et lorem magna dolores, rebum et justo voluptua ipsum magna. Tempor nonumy justo takimata rebum elitr invidunt, ipsum kasd et sanctus aliquyam dolore diam, kasd eos diam ea sed diam takimata amet. Stet dolore nonumy amet consetetur invidunt dolor sit elitr, at elitr nonumy stet justo lorem erat tempor sit stet. Dolor kasd accusam nonumy eos, dolor eirmod.&lt;/p>
+                    &lt;p class="rt" >No tempor sadipscing kasd magna invidunt est lorem magna, no vero amet gubergren et rebum sed, eos nonumy sed at rebum sit kasd eirmod stet. Diam gubergren lorem elitr dolor. Sadipscing elitr et stet takimata dolor at sit aliquyam sea. Nonumy gubergren sed consetetur diam rebum. Lorem stet no stet nonumy ea dolor erat duo, at sadipscing stet eos justo et, et et sit et diam nonumy ut sed. Elitr justo sadipscing dolore takimata, nonumy vero takimata takimata dolores, aliquyam ut eirmod ut sit ipsum sed rebum. Dolores ipsum sea dolor clita amet et sed. Clita sadipscing amet sit stet et aliquyam amet voluptua, elitr sit dolor duo et ipsum clita dolor clita. Sadipscing et ea sadipscing ea. Dolor elitr justo rebum gubergren dolores sed, eirmod amet elitr erat sed. Duo invidunt sit sanctus duo et vero sed. Takimata est diam invidunt sed dolore sanctus sit diam clita. Et clita et et ut. Dolore clita eirmod no ut amet magna. Sed justo ea eos sea dolores diam duo sit eirmod. Lorem amet invidunt amet rebum takimata, voluptua ipsum amet invidunt et, amet est dolor diam sed no, aliquyam amet ipsum sea lorem et lorem magna dolores, rebum et justo voluptua ipsum magna. Tempor nonumy justo takimata rebum elitr invidunt, ipsum kasd et sanctus aliquyam dolore diam, kasd eos diam ea sed diam takimata amet. Stet dolore nonumy amet consetetur invidunt dolor sit elitr, at elitr nonumy stet justo lorem erat tempor sit stet. Dolor kasd accusam nonumy eos, dolor eirmod.&lt;/p>
+                    &lt;p class="jst">No tempor sadipscing kasd magna invidunt est lorem magna, no vero amet gubergren et rebum sed, eos nonumy sed at rebum sit kasd eirmod stet. Diam gubergren lorem elitr dolor. Sadipscing elitr et stet takimata dolor at sit aliquyam sea. Nonumy gubergren sed consetetur diam rebum. Lorem stet no stet nonumy ea dolor erat duo, at sadipscing stet eos justo et, et et sit et diam nonumy ut sed. Elitr justo sadipscing dolore takimata, nonumy vero takimata takimata dolores, aliquyam ut eirmod ut sit ipsum sed rebum. Dolores ipsum sea dolor clita amet et sed. Clita sadipscing amet sit stet et aliquyam amet voluptua, elitr sit dolor duo et ipsum clita dolor clita. Sadipscing et ea sadipscing ea. Dolor elitr justo rebum gubergren dolores sed, eirmod amet elitr erat sed. Duo invidunt sit sanctus duo et vero sed. Takimata est diam invidunt sed dolore sanctus sit diam clita. Et clita et et ut. Dolore clita eirmod no ut amet magna. Sed justo ea eos sea dolores diam duo sit eirmod. Lorem amet invidunt amet rebum takimata, voluptua ipsum amet invidunt et, amet est dolor diam sed no, aliquyam amet ipsum sea lorem et lorem magna dolores, rebum et justo voluptua ipsum magna. Tempor nonumy justo takimata rebum elitr invidunt, ipsum kasd et sanctus aliquyam dolore diam, kasd eos diam ea sed diam takimata amet. Stet dolore nonumy amet consetetur invidunt dolor sit elitr, at elitr nonumy stet justo lorem erat tempor sit stet. Dolor kasd accusam nonumy eos, dolor eirmod.&lt;/p>
+
+            direction:- 
+             - it is used to change direction of text
+              i.e. left to right    (ltr)  
+                  OR
+                 right to left    (rtl)
+             unicode-bidi : bidi-override used to handle bidirections of text
+             
+                &lt;h1>I am normal Text&lt;/h1>
+                    &lt;h1 style="direction: rtl;">Which is my direction&lt;/h1>
+                    &lt;h1 style="direction: rtl; unicode-bidi: bidi-override;">Ambulance&lt;/h1>
+
+            vertical text
+             - writing-mode : vertical-lr
+                      : vertical-rl
+                    
+            Text Decoration
+            text-decoration is used to set or remove text-decoration
+            eg  underline, overline, line-through
+
+              text-decoration : underline
+                      : overline
+                      : line-through
+                      : none
+                      
+                &lt;p style="color:blue; text-decoration : underline">I am underlined text&lt;/p>
+                    &lt;p style="text-decoration: overline;">I am overlined text&lt;/p>
+                    &lt;p style="text-decoration: line-through;">I am deprecated&lt;/p>
+                    &lt;p>&lt;a href="#" style="text-decoration: none; color: black;"> Guess me&lt;/a>&lt;/p>
+
+            Text shadow:-
+             - text-shadow property adds shadow effects to text.
+             
+             text-shadow : xoffset yoffset blur/height color;
+             text-shadow : shadow1, shadow2, shadow3,...
+
+            .sd1
+                        {
+                            text-shadow: 5px 0px 5px red;
+                            color: white;
+                            font-family: 'Lucida Calligraphy';
+                        }*/
+                        .sd2
+                        {
+                            color:rgba(255, 255, 255, 0);
+                            text-shadow: 1px 1px 2px violet,
+                                         2px 2px 2px indigo,
+                                         3px 3px 2px blue,
+                                         4px 4px 2px green,
+                                         5px 5px 2px yellow,
+                                         6px 6px 2px orange,
+                                         7px 7px 2px red;
+                        }
+                        .sd3
+                        {
+                            color:rgba(255, 255, 255, 0);
+                            text-shadow: 0px 0px 1px violet,
+                                         0px 0px 2px indigo,
+                                         0px 0px 3px blue,
+                                         0px 0px 4px green,
+                                         0px 0px 5px yellow,
+                                         0px 0px 6px orange,
+                                         0px 0px 7px red;
+                        }
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
-        HTML Skeleton
+        Fonts, Backgrounds
       </a>
     </div>
     <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            CSS fonts:- 
+             - font-family property selects fonts
+             - fonts are arraged as priorities.
+             Eg
+                font-family: 'Century Gothic','Kunstler Script';
+                
+            font-style  : normal
+                  : italic
+                  : oblique
+                  
+            font-weight : normal
+                  : bold
+                  
+                  : number (0 - 900)
+                  
+                &lt;h1 style="font-weight: bold;">I am bold weight heading&lt;/h1>
+                    &lt;p style="font-weight: bold;">I am bold weight paragraph&lt;/p>
+
+                    &lt;h1 style="font-weight: 900;"> I am 900w heading&lt;/h1>
+                    &lt;p style="font-weight: 900;"> I am 900w paragraph&lt;/p>
+                    &lt;span style="font-weight: 900;"> I am 900w span&lt;/span>
+
+                    &lt;h1 style="font-weight: 500;">I am 500 w heading&lt;/h1>
+                    &lt;p style="font-weight: 500;">I am  500 w paragraph&lt;/p>
+                    &lt;span style="font-weight: 500;">I am  500 w span&lt;/span>
+
+                    &lt;h1 style="font-weight: 100;">I am 100 w heading&lt;/h1>
+                    &lt;p style="font-weight: 100;">I 100 w paragraph&lt;/p>
+                    &lt;span style="font-weight: 100;">I 100 w span&lt;/span>
+
+                    &lt;h1 style="font-weight: normal;">I am normal weight heading&lt;/h1>
+                    &lt;p style="font-weight: normal;">I am normal weight paragraph&lt;/p>
+                    &lt;span style="font-weight: normal;">I am normal span&lt;/span>
+                
+            font-varient : normal
+                   : small-caps -> small to capital
+                          -> capital to bigger
+
+            font-size : px or em (1em = 16px)
+                  : 10 vw - viewport width - responsive
+                  
+            CSS Backgrounds
+            background-color specifies background color of element
+                &lt;h1 style="background-color: rgb(0,0,255);"> I am heading 1&lt;/h1>
+                    &lt;div style="background-color: rgba(0,255,255,0.5);">I am division&lt;/div>
+                    &lt;p style="background-color: #ff0000;">I am pragraph&lt;/p>
+                    &lt;span style="background-color:hsla(100, 50%, 50%, 0.5);">I am span&lt;/span>
+
+            background-image adds image to background
+              
+              background-image : url();
+
+            background-repeat repeats images either in horizontal direction
+                                 or in vertical direction
+                               or no repeat
+                               
+              background-repeat : repeat-x
+                        : repeat-y
+                        : no-repeat
+
+            background-position
+              right / left
+              top / bottom
+              
+              background-position : right top;
+
+            background-attachment: specifies image should be fixed or scrolling
+              background-attachment : fixed;    -> not fixed with page
+                          : scroll;   -> fixed with page
+
+            background-size specifies size of background
+
+              background-size : 100px 15px;
+                      : contain;
+                      : cover;
+
+            CSS Gradient backgrounds
+              i) Linear gradient
+              ii)Radial gradient
+              Note :- minimum 2 color stops required
+            i) Linear gradient
+              
+              background : linear-gradient(direction, color_stop1, color_stop2, color_stop3, ...)
+                direction -> to right
+                      -> to left
+                      -> to bottom
+                      -> to top
+                      -> to right bottom
+                      -> ...
+
+                    background: linear-gradient(to right, red,black);
+                            background: linear-gradient(to right, red,pink,white);
+                            background: linear-gradient(to left, red,pink,white);
+                            background: linear-gradient(to top, red,pink,white);
+                            background: linear-gradient(to bottom, red,pink,white);*/
+                            background: linear-gradient(to right, red,orange,yellow,lightgreen,green,darkgreen,black );
+
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
-         HTML Head Section
+         Radial gradient text transformation borders
       </a>
     </div>
     <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            CSS Gradient backgrounds
+                  i) Linear gradient
+                  ii)Radial gradient
+                  Note :- minimum 2 color stops required
+                i) Linear gradient
+                  
+                  background : linear-gradient(direction, color_stop1, color_stop2, color_stop3, ...)
+                    direction -> to right
+                          -> to left
+                          -> to bottom
+                          -> to top
+                          -> to right bottom
+                          -> ...
+
+                        background: linear-gradient(to right, red,black);
+                                background: linear-gradient(to right, red,pink,white);
+                                background: linear-gradient(to left, red,pink,white);
+                                background: linear-gradient(to top, red,pink,white);
+                                background: linear-gradient(to bottom, red,pink,white);*/
+                                background: linear-gradient(to right, red,orange,yellow,lightgreen,green,darkgreen,black );
+
+                  background : linear-gradient(90deg, color_stop1, color_stop2, color_stop3,...)
+                         -> 90deg
+                            180deg
+                          -90deg
+                          
+                ii)Radial Gradient
+                  background : radial-gradient(shape, color_stop1, color_stop2, color_stop3,...)
+                         shape -> circle or ellipse
+
+
+                        /*background: radial-gradient(circle,black, maroon, red, pink, white);
+                                background: radial-gradient(circle,black,maroon, red, pink, white);*/
+                                background: radial-gradient(ellipse,black,maroon, red, pink, white);
+
+                Text transformation
+                 - text-transform property is used to specify
+                   all characters as upper case or lowercase or
+                   capitalize each word.
+                   
+                   text-transform : uppercase;
+                          : lowercase;
+                          : capitalize;
+
+
+                    &lt;h1 style="text-transform: capitalize;">I am text observe MyCases&lt;/h1>
+                        &lt;h1 style="text-transform: lowercase;">I am text observe MyCases&lt;/h1>
+                        &lt;h1 style="text-transform: uppercase;">I am text observe MyCases&lt;/h1>
+
+                Text spacing
+                 - text-indent property is used specify indention of first line of text
+                  text-indent : 50px;
+
+                        &lt;p style="text-indent: 50px;">Erat invidunt aliquyam sea magna sit dolor ut, aliquyam at eos diam diam clita sit at eirmod, lorem elitr sea rebum ut lorem labore sea dolores ut. Stet eirmod voluptua dolore dolor, sit amet nonumy ipsum takimata ipsum sea, sadipscing consetetur accusam dolor kasd, dolores accusam ipsum lorem consetetur voluptua. Dolor gubergren vero ipsum lorem sed aliquyam est et. Tempor stet diam et sed rebum et ut amet labore, ipsum sed consetetur amet eirmod. Dolore kasd dolore et lorem sea. Et accusam et dolore duo clita tempor vero ea, ipsum kasd invidunt vero ea, est kasd sea ut dolor voluptua ea vero dolor tempor. Magna at clita et sit eos, erat accusam dolor sadipscing sit ipsum duo invidunt dolores consetetur, eos magna ut eos lorem stet stet, rebum consetetur gubergren duo dolores stet, lorem sit ipsum sit voluptua et aliquyam, justo eirmod dolor clita dolores diam, kasd et ipsum magna.&lt;/p>
+
+
+                Letter spacing
+                 - letter-spacing property is used to specify space between characters
+                   in text
+                   
+                    letter-spacing : 3px;
+                             : 0px; -> Default
+                             : -3px;
+
+                    &lt;h1 style="letter-spacing: -3px;">We are the letters observe our spacing tightly spaced&lt;/h1>
+                        &lt;h1 style="letter-spacing: 0px;">We are the letters observe our spacing&lt;/h1>
+                        &lt;h1>We are the letters observe our spacing&lt;/h1>
+                        &lt;h1 style="letter-spacing: 3px;">We are the letters observe our spacing loosely spaced&lt;/h1>
+
+                Line spacing:- 
+                 line-height property is used to specify
+                 vertical spacing between lines
+                    &lt;p>I am line 1&lt;/p>
+                        &lt;p style="line-height: 0.0;">I am line 2&lt;/p>
+                        &lt;p>I am line 3&lt;/p>
+                        &lt;p>I am line 4&lt;/p>
+                        &lt;br>&lt;br>
+                        &lt;p>I am line 1&lt;/p>
+                        &lt;p style="line-height: 2.0;">I am line 2&lt;/p>
+                        &lt;p>I am line 3&lt;/p>
+                        &lt;p>I am line 4&lt;/p>
+                        &lt;p style="line-height: 2;">Accusam voluptua sit ea elitr diam. Ea eirmod sed sit invidunt amet tempor. Dolore sed sed takimata amet lorem voluptua elitr et sed, sit dolor accusam dolor et dolor takimata vero est ea, ut et dolores sed amet et clita eirmod justo sit, stet voluptua dolores nonumy clita et dolores ut diam. At et amet eirmod ipsum et ea, lorem amet accusam sit tempor et ea ut. Magna eos ipsum et dolor et dolores stet sit. Et gubergren justo dolor diam amet elitr tempor voluptua, tempor at takimata aliquyam erat vero consetetur eos clita, nonumy sit est takimata amet ea elitr eos no, et dolor lorem dolores sit vero, sanctus ipsum rebum lorem amet kasd stet magna labore. Dolor duo consetetur sed ut dolor et et. Eos amet sed dolores sed. Tempor no kasd gubergren kasd sit ut et accusam justo. Eos ipsum eos erat gubergren eos no sed. Sea sed elitr elitr takimata accusam eos tempor, tempor erat ipsum no consetetur gubergren. Consetetur nonumy dolor tempor sed accusam invidunt, est justo magna amet rebum clita amet no sed. No magna lorem nonumy kasd et ea. Lorem magna stet duo diam et sadipscing at eos clita. Tempor amet diam diam.&lt;/p>
+                        
+                Word spacing
+                 word-spacing property is used to specify the space 
+                 between words
+                 default value is 0px
+
+                    &lt;p style="word-spacing: -5px;">Stet vero sea dolor rebum takimata ut labore. Et duo sea et gubergren duo accusam nonumy amet et, sed dolor.&lt;/p>
+                        &lt;p>Stet vero sea dolor rebum takimata ut labore. Et duo sea et gubergren duo accusam nonumy amet et, sed dolor.&lt;/p>
+                        &lt;p style="word-spacing: 5px;">Stet vero sea dolor rebum takimata ut labore. Et duo sea et gubergren duo accusam nonumy amet et, sed dolor.&lt;/p>
+                        
+                White space:-
+                 - white-space property specifies how white space 
+                   inside an element is handled.
+                 - value is nowrap - the sequence of white speace collpase
+                   into a single white space.
+                 - The text contineus the same line until &lt;br> tag
+                 - normal - text will warp when nessesary
+
+                    &lt;p style="white-space: nowrap;">
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                        &lt;/p>
+
+                        &lt;p style="white-space: normal;">
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                            This is white space property This is white space property This is white space property This is white space property &lt;br>
+                            This is white space property This is white space property This is white space property This is white space property 
+                        &lt;/p>
+
+                CSS borders:-
+                border property specifies border for an element
+                border-style : dotted
+                       : solid
+                       : dashed
+                       : double
+                       
+                       : groove
+                       : ridge
+                       : inset
+                       : outset
+                       
+                       : none
+                       : hidden
+                       
+                       : dashed double solid dotted
+                         -> priority will be clockwise
+
+                    &lt;div style="border-style : solid double inset dashed;"> Solid Double Inset Dashed border&lt;/div>&lt;br>
+                        &lt;div style="border-style : solid double inset;"> Solid Double Inset border&lt;/div>&lt;br>
+                        &lt;div style="border-style : dotted dashed;"> Dotted and Dashed border&lt;/div>&lt;br>
+                        &lt;div style="border-style : hidden;"> Hidden border&lt;/div>&lt;br>
+                        &lt;div style="border-style : none;"> None border&lt;/div>&lt;br>
+                        &lt;div style="border-style : outset;"> Outset border&lt;/div>&lt;br>
+                        &lt;div style="border-style : inset;"> Inset border&lt;/div>&lt;br>
+                        &lt;div style="border-style : ridge;"> Ridge border&lt;/div>&lt;br>
+                        &lt;div style="border-style : groove;"> Groove border&lt;/div>&lt;br>
+                        &lt;div style="border-style : double;"> Double border&lt;/div>&lt;br>
+                        &lt;div style="border-style : dashed;"> Dashed Border&lt;/div>&lt;br>
+                        &lt;div style="border-style : dotted;"> Dotted border&lt;/div>&lt;br>
+                        &lt;div style="border-style : solid;">Solid border&lt;/div>&lt;br>
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
-        HTML Body Section
+        Border outline, Margin, Padding, Links
       </a>
     </div>
     <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            border-width specifies width of border
+              border-width : number
+                     : thin
+                     : medium
+                     : thick
+                     
+                    .thk
+                          {
+                              border-width: 15px;
+                          }
+                          div
+                          {
+                              width : 200px;
+                              height : 100px;
+                          }      
+                     
+                     
+                     
+                      &lt;div style="border-style: outset;" class="thk">Outset&lt;/div>&lt;br>
+                      &lt;div style="border-style: inset;" class="thk">Inset&lt;/div>&lt;br>
+                      &lt;div style="border-style: ridge;" class="thk">Ridge&lt;/div>&lt;br>
+                      &lt;div style="border-style: groove;" class="thk">Groove&lt;/div>&lt;br>
+                      &lt;div style="border-style: double;" class="thk">&lt;/div>&lt;br>
+                      &lt;div style="border-style: dotted;" class="thk">&lt;/div>&lt;br>
+                      &lt;div style="border-style: dashed;" class="thk">&lt;/div>&lt;br>
+                      &lt;div style="border-style: solid;" class="thk">&lt;/div>&lt;br>
+
+              border-color: any color
+                    .brdr1
+                          {
+                              border-style: ridge;
+                              border-width: 10px;
+                              border-color: red;
+                          }
+                          .brdr2
+                          {
+                              border-style: ridge groove;
+                              border-width: 10px;
+                              border-color: yellow green;
+                          }
+                          .brdr3
+                          {
+                              border : maroon 2px solid;
+                          }
+
+              border-sides : can apply specific styles to specific border
+                    .brdr4
+                          {
+                              border : 15px orange solid;
+                              border-left: 10px blue ridge;
+                              border-bottom: 10px navy inset;
+                              border-right: skyblue 10px double;
+                              border-top : dashed blueviolet 10px;
+                          }
+                    
+              Rounded corners
+              border-radius : 
+
+                    .brdr5
+                          {
+                              border : solid 2px;
+                              border-radius: 50px 0px;
+                              border-color: red;
+                          }
+                          .brdr6
+                          {
+                              border : solid 2px;
+                              border-color : orchid;
+                              border-radius: 25px 25px 0px 0px;
+                          }
+
+
+              border-image :
+                border-image-source   -> source of image
+                border-image-slice    -> used to slice image
+                border-image-width    -> used to set width of image
+                border-image-repeat   -> round, repeat, stretch
+
+              .brdrmg1
+                          {
+                              width : 500px;
+                              height: 100px;
+                              border-style: solid;
+                              border-width: 20px;
+                              border-image-source: url("border.png");
+                              border-image-slice: 30;
+                              border-image-repeat: repeat;
+                              border-image-width: 20px;
+                              
+                          }
+                          .brdrmg2            
+                          {
+                              width : 500px;
+                              height: 100px;
+                              border-style: solid;
+                              border-width: 20px;
+                              border-image-source: url("border.png");
+                              border-image-slice: 30;
+                              border-image-repeat: round;
+                              border-image-width: 20px;
+                          }
+                          .brdrmg3
+                          {
+                              width : 500px;
+                              height: 100px;
+                              border-style: solid;
+                              border-width: 20px;
+                              border-image-source: url("border.png");
+                              border-image-slice: 30;
+                              border-image-repeat: stretch;
+                              border-image-width: 20px;
+                          }
+
+              CSS Outline
+               - Same as that of border
+               - Outline comes after border
+               - Sides, radious, image, 3d styles are not supported
+
+                    .olbr1
+                          {
+                              border : 10px solid black;
+                          }
+
+                          .olbr2
+                          {
+                              outline : 10px solid black;
+                          }
+                          .combi
+                          {
+                              
+                              outline : 10px solid blue;
+                              border : 10px solid red;
+                          }
+
+              CSS Margine : -> Outer space
+                margine-top : number / %
+                margine-bottom : number / %
+                margine-right : number / %
+                margine-left : number / %
+                margine : auto  -> Horizontally center of container
+
+
+              CSS Padding : -> Inner space
+                padding-top : number / %
+                padding-bottom : number / %
+                padding-right : number / %
+                padding-left : number / %
+                padding : number  -> all sides
+
+                    .mrgn1
+                          {
+                              
+                              margin-bottom: 50px;
+                              margin-top: 50px;
+                              margin-left: 50px; 
+                              margin-right: 50px; 
+                              margin: auto;
+                              border:1px solid;
+                          }
+                          .pdng1
+                          {
+                              /*
+                              padding-top: 50px;
+                              padding-bottom: 50px;
+                              padding-left: 50px;*/
+                              padding : 100px;
+                              border:1px solid;
+                          }
+
+              Links:-
+               links can be styled with color, font-family, background, etc
+               links have following states
+                a : link  -> a normal or unvisited link
+                a : visited -> visited by user
+                a : hover   -> mouse pointer on link
+                a : active  -> moment it is clicked
+                
+                Eg
+                
+                a:link
+                {
+                  color : pink;
+                }
+
+                a:visited
+                {
+                  color : green;
+                }
+
+                a:hover
+                {
+                  color : red;
+                }
+                
+                a:active
+                {
+                  color : blue;
+                }
+
+
+
+                    a
+                          {
+                              text-decoration: none;
+                              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                              border: 1px solid blue;
+                              border-radius: 5px;                
+                              padding: 5px;
+                          }
+                          a:link
+                          {
+                              color : pink;
+                          }
+                          a:visited
+                          {
+                              color : green;
+                          }
+                          a:hover
+                          {
+                              color : white;
+                              text-shadow: 0px 0px 3px black;                                
+                              background: linear-gradient(to right, yellow, skyblue);
+                              border: 1px solid red;
+                          }
+                          a:active
+                          {
+                              color : white;
+                              font-size: 50px;
+                          }
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
-        HTML Attributes
+        Display list, Float, Z index
       </a>
     </div>
     <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            display :block    -> places elements in next line
+                  :inline   -> occuples only ample space (as span element)
+                :inline-block -> places element in single line as per enough width
+                
+                  .il
+                        {
+                            display: inline;
+                            width : 200px;
+                            height : 100px;
+                            border : 1px solid greenyellow;
+                            background: linear-gradient(to right, lightgreen, skyblue);
+                        }
+
+                        .bl
+                        {
+                            display: block;
+                            width : 200px;
+                            height : 100px;
+                            border : 1px solid greenyellow;
+                            background: linear-gradient(to right, lightgreen, skyblue);
+                        }
+
+                        .ib            
+                        {
+                            display: inline-block;
+                            width : 800px;
+                            height : 100px;
+                            border : 1px solid greenyellow;
+                            background: linear-gradient(to right, lightgreen, skyblue);
+                        }
+                  
+                  
+            CSS Lists:-
+              list-style-type : none  -> no bullets, no numbers
+              list-style-image
+              list-style-position
+
+            float : right
+                  : left
+                : none
+
+            z-index : number
+              position : absolute
+              
+            Custom positions of elements
+              position : absolute
+              top : number
+              left : number
+              
+              
+                &lt;div style="position: absolute; top:20px; left : 200px; z-index: 1;">1&lt;/div>
+                    &lt;div style="position: absolute; top:120px; left: 150px; z-index: 3;">2&lt;/div>
+                    &lt;div style="position: absolute; top:50px; z-index: 2;">3&lt;/div>
+                    &lt;div style="position: absolute; z-index: 4;">4&lt;/div>
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
@@ -169,6 +919,7 @@
 
 
 
+</div>
 </div>
 
 

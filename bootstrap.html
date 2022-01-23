@@ -62,106 +62,1055 @@
 	<h1 class="text-center m-5">BootStrap NOTES</h1>
 </div> 
 
+<div class="container">
 	<div id="accordion">
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-        Introduction to BootStrap
+        Introduction to BootStrap, History, Official Website
       </a>
     </div>
     <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
       <div class="card-body">
-        <p>Lorem Ipsum</p>
+        <p>
+          <pre>
+            Bootstrap
+           - Bootstrap is opensource framework of CSS.
+           - It helps in desiging responsive and device
+             friendly web pages.(RWD - responsive web design)
+           - Bootstrap includes CSS and optional scripting
+             (javascript) templates.
+           - This framework helps in faster web development.
+           
+          History
+           - Bootstrap was developed by Mark otto and 
+             Jacob Thornton at Twitter in Aug 2011.
+           - Bootstrap 2.x was released on 31st Jan 2012,
+             with builtin support for Glyficons.
+           - v2.x  onwords support for RWD.
+           - Bootstrap 3 was released on 19th Aug 2013.
+           - it focused on mobile first approach.
+           - Bootstrap 4 was announced on 29th october 2014 and
+             stable release was on 18 Jan 2018.
+           - Stable version is 4.5
+           - Bootstrap 5  -> alpha version 16th Jun 2020
+                  -> beta 1      7th Dec 2020
+                  -> beta 2    10th Feb 2021
+                  -> 5       5th May 2021
+                  -> 5.1.0       4th Aug 2021
+                  -> Latest 5.1.3  9th October 2021
+                  
+           - Official Website:- https://getbootstrap.com/
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-        History of BootStrap
+        BootStrap CDN
       </a>
     </div>
     <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        <p>Lorem Ipsum</p>
+        <p>
+          <pre>
+            CDN :- 
+               - Content delivery network.
+
+            &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;
+            &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+            &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"&gt;&lt;/script&gt;
+            &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;&lt;/script&gt;        
+          </pre>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-         Features of BootStrap
+         Colors, Lists
       </a>
     </div>
     <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        <pre>Lorem Ipsum
-		</pre>
+        <p>
+          <pre>
+            Colors:- 
+             - Bootstrap supports following colors
+              - primary
+              - secondary
+              - success
+              - danger
+              - warning
+              - info
+              - dark
+              - light
+              - white
+              - black
+              - white-50
+              - black-50
 
+                   &lt;!--
+                    &lt;p class="h1 text-primary bg-warning">This is Primary Color&lt;/p>        
+                    &lt;p class="h1 text-secondary bg-danger">This is Secondary Color&lt;/p>
+                    &lt;p class="h1 text-success bg-info">This is Success color&lt;/p>
+                    &lt;p class="h1 text-warning bg-dark">This is Warning Color&lt;/p>
+                    &lt;p class="h1 text-danger bg-light">This is Danger color&lt;/p>
+                    &lt;p class="h1 text-info bg-white">This is Info color&lt;/p>
+                    &lt;p class="h1 text-dark bg-black">This is dark color&lt;/p>
+                    &lt;p class="h1 text-light bg-white-50">This is light color&lt;/p>
+                    &lt;p class="h1 text-white bg-dark-50">This is white color&lt;/p>
+
+                    &lt;p class="h1 text-black bg-primary">This is black color&lt;/p>
+                    &lt;p class="h1 text-white-50 bg-secondary">This is 50% white color&lt;/p>
+                    &lt;p class="h1 text-black-50 bg-success">This is 50% black color&lt;/p>
+
+                    Mark text as important-->
+                    &lt;p class=" lead">I am important text&lt;/p>
+                    &lt;p>Justo est amet elitr aliquyam labore, diam justo accusam magna clita dolore, sit dolores sed et voluptua kasd. Sit elitr est kasd erat accusam ea diam, magna ea sea sit ipsum ea est. Eirmod magna tempor consetetur vero eirmod. At accusam dolor vero takimata justo, takimata et no et diam,.&lt;/p>
+
+                    &lt;!--Unimportant text-->
+                    &lt;p class="text-muted">I am unimportant text&lt;/p>
+
+
+            Lists
+             - list-group
+             - list-group-item
+             - list-group-item-action -> clickable
+             - list-group-item-*...* -> colors
+             - list-group-horizontal
+             
+             - active
+
+
+            &lt;div class="w-50 mx-auto">
+                    &lt;!--&lt;div style="width:50%; margin: auto;">-->
+                        &lt;ul class="list-group">
+                            &lt;li class="list-group-item">Angular&lt;/li>
+                            &lt;li class="list-group-item">NodeJS&lt;/li>
+                            &lt;li class="list-group-item">ReactJS&lt;/li>
+                            &lt;li class="list-group-item">MySQL&lt;/li>
+                            &lt;li class="list-group-item">MongoDB&lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+
+          </pre>
+        </p>
 			
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
-         Four
+         Lists, Modal & Operations
       </a>
     </div>
     <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            Lists
+             - list-group
+             - list-group-item
+             - list-group-item-action -> clickable
+             - list-group-item-*...* -> colors
+             - list-group-horizontal
+             
+             - active
+
+            &lt;!DOCTYPE html>
+            &lt;html>
+                &lt;head>
+                    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script>
+                    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">&lt;/script>        
+                &lt;/head>
+                &lt;body>
+                    &lt;div class="list-group w-50 mx-auto ">
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           active">                            
+                            &lt;p class="h4">Angular &lt;small>4th Feb 2022&lt;/small> &lt;/p>                  
+                            &lt;p>Gubergren et dolor ipsum lorem justo accusam amet kasd, duo invidunt labore et et erat eirmod at, accusam diam dolore sed et. Et sit dolores vero erat invidunt, lorem dolor sea amet justo magna. Nonumy sit dolor sit sadipscing kasd. Amet lorem justo ipsum at amet. Labore takimata aliquyam takimata.&lt;/p>              
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-dark">                            
+                            &lt;p class="h4">NodeJS &lt;small>24th Jan 2022&lt;/small> &lt;/p>                
+                            &lt;p>Amet rebum tempor aliquyam elitr et vero takimata stet clita. Nonumy vero lorem labore magna gubergren sea takimata, sed aliquyam consetetur dolor dolore. Ea ea amet dolores rebum eirmod ea duo, lorem sed tempor voluptua et amet. Dolor nonumy voluptua nonumy gubergren tempor eos diam amet eos. Sea dolore magna.&lt;/p>
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-success">                            
+                            &lt;p class="h4">ReactJS &lt;small>4days ago&lt;/small> &lt;/p>                
+                            &lt;p>Clita diam ipsum ipsum lorem magna diam takimata. Rebum aliquyam sed et et sadipscing vero dolor, sed ipsum sed aliquyam amet rebum et vero stet at. Sit lorem est voluptua dolores amet, lorem gubergren labore elitr clita aliquyam et ipsum. Stet consetetur stet ipsum invidunt sed takimata duo ipsum eos..&lt;/p>
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-info">                            
+                            &lt;p class="h4">MongoDB &lt;small>1min ago&lt;/small> &lt;/p>                
+                            &lt;p>Sadipscing et est aliquyam stet et tempor sed dolor dolore sanctus, consetetur sea sed rebum at amet. Clita invidunt et et clita et lorem diam elitr. Takimata dolor ut sea stet aliquyam ipsum at ipsum. Magna kasd sadipscing kasd diam consetetur nonumy, sit voluptua accusam gubergren sanctus dolor duo stet,.&lt;/p>
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-warning">                            
+                            &lt;p class="h4">MySQL &lt;small>11th Feb 2022&lt;/small> &lt;/p>                
+                            &lt;p>Lorem stet consetetur et diam diam est stet et est dolor. Consetetur amet et vero lorem sed dolores amet elitr. Sanctus consetetur kasd rebum sea sit sed magna ut dolore, diam et voluptua sit et dolor eos, et ipsum magna stet no. Ea et eirmod justo tempor et, et amet.&lt;/p>
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-danger">                            
+                            &lt;p class="h4">VeuJS &lt;small>11th Feb 2022&lt;/small> &lt;/p>                
+                            &lt;p>Lorem stet consetetur et diam diam est stet et est dolor. Consetetur amet et vero lorem sed dolores amet elitr. Sanctus consetetur kasd rebum sea sit sed magna ut dolore, diam et voluptua sit et dolor eos, et ipsum magna stet no. Ea et eirmod justo tempor et, et amet.&lt;/p>
+                        &lt;/a>
+
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           list-group-item-primary
+                                           disabled">                            
+                            &lt;p class="h4">Java &lt;small>11th Feb 2022&lt;/small> &lt;/p>                
+                            &lt;p>Lorem stet consetetur et diam diam est stet et est dolor. Consetetur amet et vero lorem sed dolores amet elitr. Sanctus consetetur kasd rebum sea sit sed magna ut dolore, diam et voluptua sit et dolor eos, et ipsum magna stet no. Ea et eirmod justo tempor et, et amet.&lt;/p>
+                        &lt;/a>
+                    &lt;/div>
+                    &lt;br>&lt;br>
+                    &lt;ol class="list-group list-group-numbered w-50 mx-auto">
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           active">Angular&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">NodeJS&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">ReactJS&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">MySql&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">Mongodb&lt;/a>
+                    &lt;/ol>
+                    &lt;br>&lt;br>
+                    &lt;div class="list-group list-group-horizontal">
+                        &lt;div class="list-group-item
+                                    list-group-item-action
+                                    active">Angular&lt;/div>           
+                        &lt;div class="list-group-item
+                                    list-group-item-action">NodeJS&lt;/div>
+                        &lt;div class="list-group-item
+                                    list-group-item-action">ReactJS&lt;/div>
+                        &lt;div class="list-group-item
+                                    list-group-item-action">MySQL&lt;/div>
+                        &lt;div class="list-group-item
+                                    list-group-item-action">MongoDB&lt;/div>
+                    &lt;/div>
+                    &lt;br>&lt;br>
+                    &lt;div class="list-group w-50 mx-auto">
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action
+                                           active">Angular&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">NodeJS&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">ReactJS&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">MySql&lt;/a>
+                        &lt;a href="#" class="list-group-item
+                                           list-group-item-action">Mongodb&lt;/a>
+                    &lt;/div>
+                    &lt;br>&lt;br>
+                    &lt;ol class="list-group w-50 mx-auto">
+                        &lt;li class="list-group-item">Angular&lt;/li>
+                        &lt;li class="list-group-item">NodeJS&lt;/li>
+                        &lt;li class="list-group-item">ReactJS&lt;/li>
+                        &lt;li class="list-group-item">MySQL&lt;/li>
+                        &lt;li class="list-group-item">MongoDB&lt;/li>
+                    &lt;/ol>
+                &lt;/body>
+            &lt;/html>
+
+            Modal:- 
+            Learning points
+              Sizes sm    md    lg
+              buttons   btn class
+              fontawesome   lib
+              
+            Operations
+             - show modal     data-toggle = "modal"
+             - set target     data-target = "#my_division"
+             - disable 'Esc'    data-keyboard = "false"
+             - disable mouse click  data-backdrop = "static"
+             - enable tabs      tabindex = -1
+             - close modal      data-dismiss = "modal"
+
+            Fig
+
+
+            &lt;!DOCTYPE html>
+            &lt;html>
+                &lt;head>
+                    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script>
+                    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">&lt;/script>        
+                &lt;/head>
+                &lt;body>
+                    &lt;div class="container mt-5">
+                        &lt;button class="btn btn-success
+                                       float-right"
+                                data-toggle = "modal"
+                                data-target = "#my_division">Add &lt;span class="fa fa-plus">&lt;/span> &lt;/button>
+                        &lt;div id = "my_division"
+                             class="modal fade"
+                             data-keyboard = "false"
+                             data-backdrop = "static">
+                            &lt;div class="modal-dialog modal-sm modal-dialog-centered">
+                                &lt;div class="modal-content">
+                                    &lt;div class="modal-header">
+                                        &lt;h5 class="modal-title">Products&lt;/h5>
+                                        &lt;button data-dismiss="modal"
+                                                class="close">&times;&lt;/button>
+                                    &lt;/div>
+                                    &lt;div class="modal-body">
+                                        &lt;form>
+                                            &lt;div class="form-group">
+                                                &lt;label class="control-label">P_id&lt;/label>
+                                                &lt;input type="number"
+                                                       class="form-control">
+                                            &lt;/div>
+
+                                            &lt;div class="form-group">
+                                                &lt;label class="control-label">P_name&lt;/label>
+                                                &lt;input type="text"
+                                                       class="form-control">
+                                            &lt;/div>
+
+                                            &lt;div class="form-group">
+                                                &lt;label class="control-label">P_cost&lt;/label>
+                                                &lt;input type="number"
+                                                       class="form-control">
+                                            &lt;/div>
+                                        &lt;/form>
+                                    &lt;/div>
+                                    &lt;div class="modal-footer">
+                                        &lt;button class="btn btn-success">Save&lt;/button>
+                                        &lt;button class="btn btn-danger"
+                                                data-dismiss = "modal">Cancel&lt;/button>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>    
+                        &lt;/div>
+                    &lt;/div>        
+                &lt;/body>
+            &lt;/html>
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
-        Bootstrap
+        Tables, Input Group, Dropdown
       </a>
     </div>
     <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            Tables:- 
+                Learning points
+                margins   ml  mr  mt  mb
+                      mx  my
+                      m
+                padding   pl  pr  pt  pb
+                      px  py
+                      p
+                      
+                Here for both min value 0
+                        max value 5
+                        
+                classes
+                  table
+                  table-bordered
+                  table-borderless
+                  table-sm  md    lg
+                  table-hover
+                  table-*...*
+                  
+
+                  &lt;body>
+                      &lt;div class="container mt-5">
+                          &lt;button class="float-right btn btn-primary btn-sm mb-2">Add &lt;span class="fa fa-plus">&lt;/span> &lt;/button>
+                          &lt;table class="table table-bordered table-sm table-dark table-striped table-hover">
+                              &lt;thead>
+                                  &lt;tr>
+                                      &lt;th>Sr No&lt;/th>
+                                      &lt;th>P_id&lt;/th>
+                                      &lt;th>P_name&lt;/th>
+                                      &lt;th>P_cost&lt;/th>
+                                      &lt;th>Edit&lt;/th>
+                                      &lt;th>Delete&lt;/th>
+                                  &lt;/tr>
+                              &lt;/thead>
+                              &lt;tbody>
+                                  &lt;tr>
+                                      &lt;td>1&lt;/td>
+                                      &lt;td>111&lt;/td>
+                                      &lt;td>P_one&lt;/td>
+                                      &lt;td>10000&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-edit text-warning">&lt;/span>&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-trash text-danger">&lt;/span> &lt;/td>
+                                  &lt;/tr>
+
+                                  &lt;tr>
+                                      &lt;td>2&lt;/td>
+                                      &lt;td>222&lt;/td>
+                                      &lt;td>P_two&lt;/td>
+                                      &lt;td>20000&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-edit text-warning">&lt;/span>&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-trash text-danger">&lt;/span> &lt;/td>
+                                  &lt;/tr>
+
+                                  &lt;tr>
+                                      &lt;td>3&lt;/td>
+                                      &lt;td>333&lt;/td>
+                                      &lt;td>P_three&lt;/td>
+                                      &lt;td>30000&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-edit text-warning">&lt;/span>&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-trash text-danger">&lt;/span> &lt;/td>
+                                  &lt;/tr>
+
+                                  &lt;tr>
+                                      &lt;td>4&lt;/td>
+                                      &lt;td>444&lt;/td>
+                                      &lt;td>P_four&lt;/td>
+                                      &lt;td>40000&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-edit text-warning">&lt;/span>&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-trash text-danger">&lt;/span> &lt;/td>
+                                  &lt;/tr>
+
+                                  &lt;tr>
+                                      &lt;td>5&lt;/td>
+                                      &lt;td>555&lt;/td>
+                                      &lt;td>P_five&lt;/td>
+                                      &lt;td>50000&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-edit text-warning">&lt;/span>&lt;/td>
+                                      &lt;td>&lt;span class="fa fa-trash text-danger">&lt;/span> &lt;/td>
+                                  &lt;/tr>
+                              &lt;/tbody>
+                          &lt;/table>
+                      &lt;/div>
+                  &lt;/body>
+
+              Input groups
+              classes
+                input-group
+                input-group-sm  md  lg
+                input-group-prepend
+                input-group-append
+                input-group-text
+
+
+              &lt;body>
+                      &lt;div class="container mt-5">
+                          &lt;div class="input-group m-3 input-group-sm">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;span>&#8377;&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;input class="form-control">
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;span>&#8377;&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;input class="form-control">
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3 input-group-lg">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;span>&#8377;&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;input class="form-control">
+                          &lt;/div>
+
+
+                          &lt;div class="input-group m-3">
+                              &lt;input class="form-control">
+                              &lt;div class="input-group-append">
+                                  &lt;div class="input-group-text">
+                                      &lt;span>@talentelgia.com&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;span>&#8377;&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;input type="text" class="form-control">
+                              &lt;div class="input-group-append">
+                                  &lt;div class="input-group-text bg-danger text-white">
+                                      &lt;span>.00&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;input type="radio">
+                                  &lt;/div>
+                              &lt;/div>                
+                              &lt;input type="text" class="form-control">
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text">
+                                      &lt;input type="checkbox">
+                                  &lt;/div>
+                              &lt;/div>                
+                              &lt;input type="text" class="form-control">
+                          &lt;/div>
+
+                          &lt;div class="input-group m-3">
+                              &lt;div class="input-group-prepend">
+                                  &lt;div class="input-group-text bg-danger text-white">
+                                      &lt;span>Address&lt;/span>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;textarea class="form-control">&lt;/textarea>
+                          &lt;/div>
+                      &lt;/div>
+                  &lt;/body>
+
+
+              dropdown
+                dropdown-toggle
+                dropdown-menu
+                dropdown-item
+                dropdown-toggle-split
+
+                &lt;body>
+                      &lt;div class="container mt-5">
+                          &lt;div class="input-group mb-5">
+                              &lt;div class="input-group-prepend">
+                                  &lt;button class="btn btn-secondary 
+                                                 btn-sm">Initials&lt;/button>
+                                  &lt;button class="btn btn-secondary 
+                                                 btn-sm 
+                                                 dropdown-toggle"
+                                          data-toggle = "dropdown">&lt;/button>
+                                  &lt;div class="dropdown-menu">
+                                      &lt;div class="dropdown-item">Master&lt;/div>
+                                      &lt;div class="dropdown-item">Miss&lt;/div>
+                                      &lt;div class="dropdown-item">Mr&lt;/div>
+                                      &lt;div class="dropdown-item">Mrs&lt;/div>
+                                      &lt;div class="dropdown-item">Shri&lt;/div>
+                                      &lt;div class="dropdown-item">Srmt&lt;/div>
+                                      &lt;div class="dropdown-item">Dr&lt;/div>
+                                  &lt;/div>
+                              &lt;/div>
+                              &lt;input type="text" class="form-control">
+                          &lt;/div>
+                      &lt;/div>
+                  &lt;/body>
+
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
-         Heading
+         Grid System
       </a>
     </div>
     <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            Grid System
+             - Boostrap divides screen into 12 equal columns
+             
+            Screen Sizes(width in px)
+            es    sm    md    lg    xl    xxl (B5.0 onw)
+            <576  >=576 >=768 >=992 >=1200  >=1400
+
+            &lt;!DOCTYPE html>
+            &lt;html>
+                &lt;head>
+                    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script>
+                    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">&lt;/script>        
+                    &lt;style>
+                        .bk
+                        {
+                            border-radius: 10px 0%;
+                            background: linear-gradient(to left top,red,black);
+                            color : white;
+                            text-align: center;
+                        }
+                    &lt;/style>
+                &lt;/head>
+                &lt;body>
+                    &lt;div class="container mt-5">
+                        &lt;div class="row row-cols-4">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                            &lt;div class="col bk">Col5&lt;/div>
+                            &lt;div class="col bk">Col6&lt;/div>
+                        &lt;/div>
+                        &lt;!--
+                        &lt;div class="row my-3">
+                            &lt;div class="col-sm-4 bk">Col1&lt;/div>
+                            &lt;div class="col-sm-4 bk">Col2&lt;/div>
+                            &lt;div class="col-sm-4 bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col-md-4 bk">Col1&lt;/div>
+                            &lt;div class="col-md-4 bk">Col2&lt;/div>
+                            &lt;div class="col-md-4 bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col-lg-4 bk">Col1&lt;/div>
+                            &lt;div class="col-lg-4 bk">Col2&lt;/div>
+                            &lt;div class="col-lg-4 bk">Col3&lt;/div>
+                        &lt;/div>
+                        &lt;!--
+                        &lt;div class="row">
+                            &lt;div class="col bk">Header&lt;/div>
+                        &lt;/div>
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                            &lt;div class="col bk">Col5&lt;/div>
+                            &lt;div class="col bk">Col6&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                            &lt;div class="col bk">Col5&lt;/div>                
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                            &lt;div class="col bk">Col5&lt;/div>
+                            &lt;div class="col bk">Col6&lt;/div>
+                            &lt;div class="col bk">Col7&lt;/div>
+                            &lt;div class="col bk">Col8&lt;/div>
+                            &lt;div class="col bk">Col9&lt;/div>
+                            &lt;div class="col bk">Col10&lt;/div>
+                            &lt;div class="col bk">Col11&lt;/div>
+                            &lt;div class="col bk">Col12&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                            &lt;div class="col bk">Col4&lt;/div>
+                            &lt;div class="col bk">Col5&lt;/div>
+                            &lt;div class="col bk">Col6&lt;/div>
+                            &lt;div class="col bk">Col7&lt;/div>
+                            &lt;div class="col bk">Col8&lt;/div>
+                            &lt;div class="col bk">Col9&lt;/div>
+                            &lt;div class="col bk">Col10&lt;/div>
+                            &lt;div class="col bk">Col11&lt;/div>
+                            &lt;div class="col bk">Col12&lt;/div>
+                            &lt;div class="col bk">Col13&lt;/div>
+                            &lt;div class="col bk">Col14&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col-8 bk">Col2&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col bk">Col1&lt;/div>
+                            &lt;div class="col-6 bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col-2 bk">Col1&lt;/div>
+                            &lt;div class="col-2 bk">Col2&lt;/div>
+                            &lt;div class="col-2 bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col-2 bk">Col1&lt;/div>
+                            &lt;div class="col">&lt;/div>
+                            &lt;div class="col-2 bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        &lt;div class="row my-3">
+                            &lt;div class="col-4">&lt;/div>
+                            &lt;div class="col-6 bk">Col2&lt;/div>
+                            &lt;div class="col bk">Col3&lt;/div>
+                        &lt;/div>
+
+                        -->
+                    &lt;/div>
+                &lt;/body>
+            &lt;/html>
+
+
+          </pre>
+        </p>      
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
-        Some heading
+        Forms
       </a>
     </div>
     <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            forms
+              form-group
+              form-control
+              form-text
+              form-check
+              form-check-inline
+              form-check-label
+
+            &lt;!DOCTYPE html>
+            &lt;html>
+                &lt;head>
+                    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script>
+                    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">&lt;/script>        
+                &lt;/head>
+                &lt;body>
+                    &lt;div class="container mt-5">
+                        &lt;form>
+                            &lt;!--Username-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">Username &lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;input type = "text" class="form-control">
+                                    &lt;small class="form-text text-danger">Enter Username&lt;/small>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Password-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">Password &lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;input type="password" class="form-control">
+                                    &lt;small class="form-text text-danger">Enter Password&lt;/small>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Email-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">E-mail&lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;div class="input-group">
+                                        &lt;input type="email" class="form-control">
+                                        &lt;div class="input-group-append">
+                                            &lt;span class="input-group-text">
+                                                @tcs.com
+                                            &lt;/span>
+                                        &lt;/div>
+                                    &lt;/div>
+                                    &lt;small class="form-text text-danger">Enter e-mail&lt;/small>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Languages-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">Languages&lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;div class="form-check form-check-inline">
+                                        &lt;input type="checkbox" class="form-check-input mx-2">
+                                        &lt;label class="form-check-label">Punjabi&lt;/label>
+                                    
+                                        &lt;input type="checkbox" class="form-check-input mx-2">
+                                        &lt;label class="form-check-label">Hindi&lt;/label>
+                                    
+                                        &lt;input type="checkbox" class="form-check-input mx-2">
+                                        &lt;label class="form-check-label">English&lt;/label>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Gender-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">Gender&lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;div class="form-check form-check-inline">
+                                        &lt;input type="radio" class="form-check-input mx-2" name='gender'>
+                                        &lt;label class="form-check-label">Male&lt;/label>
+                                    
+                                        &lt;input type="radio" class="form-check-input mx-2" name='gender'>
+                                        &lt;label class="form-check-label">Female&lt;/label>
+                                                                
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Address-->
+                            &lt;div class="form-group row">
+                                &lt;label class="col-2">Address&lt;/label>
+                                &lt;div class="col-3">
+                                    &lt;textarea class="form-control" rows = 3>&lt;/textarea>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!--Submit-->
+                            &lt;div class="form-group row">
+                                &lt;div class="col-5 text-center">
+                                    &lt;input type="submit" class="btn btn-success">
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/form>
+                    &lt;/div>
+                &lt;/body>
+            &lt;/html>
+
+
+          </pre>
+        </p>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
-        Bootstrap
+        Badge, Breadcrumb, Spinners, Buttons
       </a>
     </div>
     <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <p>
+          <pre>
+            Badge
+                  - badge
+                  - badge-pill
+                  - badge-*...*
+                  
+                &lt;!DOCTYPE html>
+                &lt;html>
+                    &lt;head>
+                        &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                        &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script>
+                        &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">&lt;/script>        
+                        &lt;style>
+                            .blink
+                            {
+                                animation: blinking 1s infinite;
+                            }
+                            @keyframes blinking
+                            {
+                                0%{color : blue; background-color: yellow;}
+                                75%{color : yellow; background-color: red;}
+                            }
+                        &lt;/style>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;div class="container mt-5">
+                            &lt;ul class="list-group w-25">
+                                &lt;li class="list-group-item">Angular &lt;span class="badge badge-info">13&lt;/span>&lt;/li>
+                                &lt;li class="list-group-item">NodeJS &lt;span class="badge badge-primary badge-pill">Server&lt;/span> &lt;/li>
+                                &lt;li class="list-group-item">Deno &lt;span class="badge badge-danger float-right blink">New&lt;/span> &lt;/li>
+                                &lt;li class="list-group-item">ReactJS&lt;/li>
+                                &lt;li class="list-group-item">VeuJS&lt;/li>
+                            &lt;/ul>
+                        &lt;/div>
+                    &lt;/body>
+                &lt;/html>
+
+                breadcrumb "/" character or separator
+                  breadcrumb
+                  breadcrumb-item
+                  
+                  active
+
+
+                  &lt;body>
+                        &lt;div class="container mt-5">
+                            &lt;nav>
+                                &lt;ul class="breadcrumb">
+                                    &lt;li class="breadcrumb-item active"> Home&lt;/li>
+                                    &lt;li class="breadcrumb-item"> About&lt;/li>
+                                    &lt;li class="breadcrumb-item"> Portfolio&lt;/li>
+                                    &lt;li class="breadcrumb-item"> Contact&lt;/li>
+                                    &lt;li class="breadcrumb-item"> Logout&lt;/li>
+                                &lt;/ul>
+                            &lt;/nav>
+                        &lt;/div>
+                    &lt;/body>
+                  
+                spinners:-
+                 - spinner-border
+                 - spinner-grow
+                 - spinner-border-sm
+                 - spinner-grow-sm
+
+                &lt;body>
+                        &lt;div class="container mt-5" style="background: linear-gradient(to left, gray, pink);">
+                            &lt;div class="spinner-border spinner-border-sm text-primary">&lt;/div>
+                            &lt;div class="spinner-border text-primary">&lt;/div>
+                            &lt;div class="spinner-border text-secondary">&lt;/div>
+                            &lt;div class="spinner-border text-success">&lt;/div>
+                            &lt;div class="spinner-border text-warning">&lt;/div>
+                            &lt;div class="spinner-border text-danger">&lt;/div>
+                            &lt;div class="spinner-border text-info">&lt;/div>
+                            &lt;div class="spinner-border text-dark">&lt;/div>
+                            &lt;div class="spinner-border text-light">&lt;/div>
+                            &lt;div class="spinner-border text-white">&lt;/div>
+                            &lt;div class="spinner-border text-black">&lt;/div>
+                            &lt;br>
+                            &lt;div class="spinner-grow spinner-grow-sm text-primary">&lt;/div>
+                            &lt;div class="spinner-grow text-primary">&lt;/div>
+                            &lt;div class="spinner-grow text-secondary">&lt;/div>
+                            &lt;div class="spinner-grow text-success">&lt;/div>
+                            &lt;div class="spinner-grow text-warning">&lt;/div>
+                            &lt;div class="spinner-grow text-danger">&lt;/div>
+                            &lt;div class="spinner-grow text-info">&lt;/div>
+                            &lt;div class="spinner-grow text-dark">&lt;/div>
+                            &lt;div class="spinner-grow text-light">&lt;/div>
+                            &lt;div class="spinner-grow text-white">&lt;/div>
+                            &lt;div class="spinner-grow text-black">&lt;/div>
+                            
+                        &lt;/div>
+                    &lt;/body>
+                  
+                Buttons:-
+                  btn
+                  btn-*...*
+                  btn-outline
+                  btn-outline-*...*
+                  btn-block
+                  btn-link
+                  btn-group
+                  
+                  button as link
+                  link as button
+
+                &lt;body>
+                        &lt;div class="container mt-5 ">
+                            &lt;button class="btn btn-primary">Primary Button&lt;/button>
+                            &lt;button class="btn btn-secondary">Secondary Button&lt;/button>
+                            &lt;button class="btn btn-success">Success Button&lt;/button>
+                            &lt;button class="btn btn-warning">Warning Button&lt;/button>
+                            &lt;button class="btn btn-danger">Danger Button&lt;/button>
+                            &lt;button class="btn btn-info">Info Button&lt;/button>
+                            &lt;button class="btn btn-light">Light Button&lt;/button>
+                            &lt;button class="btn btn-dark">Dark Button&lt;/button>
+                            &lt;br>&lt;br>
+                            &lt;button class="btn btn-outline-primary">Primary Button&lt;/button>
+                            &lt;button class="btn btn-outline-secondary">Secondary Button&lt;/button>
+                            &lt;button class="btn btn-outline-success">Success Button&lt;/button>
+                            &lt;button class="btn btn-outline-warning">Warning Button&lt;/button>
+                            &lt;button class="btn btn-outline-danger">Danger Button&lt;/button>
+                            &lt;button class="btn btn-outline-info">Info Button&lt;/button>
+                            &lt;button class="btn btn-outline-light">Light Button&lt;/button>
+                            &lt;button class="btn btn-outline-dark">Dark Button&lt;/button>
+                            &lt;br>&lt;br>
+                            &lt;a class="btn btn-link btn-success">Link&lt;/a>
+                            &lt;br>&lt;br>
+                            &lt;button class="btn btn-warning btn-sm"> Small Button&lt;/button>
+                            &lt;button class="btn btn-warning btn-md"> Medium Button&lt;/button>
+                            &lt;button class="btn btn-warning btn-lg"> Large Button&lt;/button>
+                            &lt;br>&lt;br>
+                            &lt;button class="btn btn-success btn-block">Block Button&lt;/button>
+                            &lt;button class="btn btn-secondary btn-block btn-sm">Small Block Button&lt;/button>
+                            &lt;button class="btn btn-secondary btn-block btn-md">Medium Block Button&lt;/button>
+                            &lt;button class="btn btn-secondary btn-block btn-lg">Large Block Button&lt;/button>
+                            &lt;br>&lt;br>
+                            &lt;div class="btn btn-group">
+                                &lt;button class="btn btn-dark">Left&lt;/button>
+                                &lt;button class="btn btn-light">Middle&lt;/button>
+                                &lt;button class="btn btn-dark">Right&lt;/button>
+                            &lt;/div>
+                            &lt;br>&lt;br>
+                            &lt;div class="btn btn-group">
+                                &lt;button class="btn btn-outline-warning"><<&lt;/button>
+                                &lt;button class="btn btn-outline-danger">>&lt;/button>
+                                &lt;button class="btn btn-outline-warning">>>&lt;/button>
+                            &lt;/div>
+                            &lt;br>&lt;br>
+                            &lt;div class="btn btn-group">
+                                &lt;button class="btn btn-outline-info fa fa-angle-double-left">&lt;/button>
+                                &lt;button class="btn btn-outline-info fa fa-play">&lt;/button>
+                                &lt;button class="btn btn-outline-info fa fa-angle-double-right">&lt;/button>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/body>
+
+
+          </pre>
+        </p>      
       </div>
     </div>
   </div>
@@ -171,6 +1120,7 @@
 
 
 
+</div>
 </div>
 
 

@@ -254,24 +254,257 @@ ii) &lt;link/>	:-
   <div class="card">
     <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
-         HTML Head Section
+         Textarea dropdown radio checkbox fieldset legend http get
       </a>
     </div>
     <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header text-center">
-      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
-        HTML Body Section
-      </a>
-    </div>
-    <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
-      <div class="card-body">
-        Lorem ipsum..
+        <p>
+        	<pre>
+        				&lt;textarea>
+								 multiline textbox
+								 &lt;textarea rows = "5" cols = "45"> .... &lt;/textarea>
+								 
+								<!doctype html>
+								&lt;html>
+									&lt;head>&lt;/head>
+									&lt;body>
+										&lt;textarea rows = 5 cols = 45 maxlength = 6>&lt;/textarea>
+									
+									&lt;/body>
+								&lt;/html>
+
+								HTML dropdown list(&lt;select> tag)
+								 - &lt;select> tag is used to create dropdown list
+								 - &lt;option> tag inside select element define the
+								   available options in the list.
+								 - &lt;select> is a paired tag
+								 - &lt;option> is a paired tag
+								 
+								Attributes 	Parameters
+								disabled	disabled
+								multiple	multiple
+								size		number	(Number of visible options)
+
+								&lt;option> tag
+								Attributes	Parameters
+								disabled	disabled
+								label		text
+								selected	selected
+								value		text
+
+								&lt;optgroup> tag
+								 - it is used to group logically related options in the
+								   dropdown list
+								 - For long list options group of related options
+								   are easier for user to handle
+								   
+								Attributes	Parameters
+								disabled	disabled
+								label		text
+
+										&lt;select multiple = multiple size = 5 placeholder = "Subjects">
+											&lt;optgroup label = "Languages">
+												&lt;option value = "hn" label = "Hindi_Language">Hindi &lt;/option>
+												&lt;option>Punjabi &lt;/option>
+												&lt;option>Hariyavi &lt;/option>
+												&lt;option selected = selected>English &lt;/option>
+											&lt;/optgroup>
+											&lt;optgroup label = Maths> 
+												&lt;option>Algebra &lt;/option>
+												&lt;option>Geometry &lt;/option>
+											&lt;/optgroup>
+											&lt;optgroup label = "Science">
+												&lt;option>Physics &lt;/option>
+												&lt;option>Chemistry &lt;/option>
+												&lt;option disabled = disabled>Biology &lt;/option>
+											&lt;/optgroup>
+											
+										&lt;/select>
+
+								Radio control
+								 - Radio buttons are used when out of many
+								   optionas just one option required to be selected.
+								 - these are created using HTML input tag 
+								   type = "radio"
+
+									&lt;h1>Choose Correct answer &lt;/h1>
+										&lt;input type = "radio" name = "opt"> True
+										&lt;input type = "radio" name = "opt"> False
+										&lt;input type = "radio" name = "opt" checked = checked> All Above
+										&lt;input type = "radio" name = "opt"> None Above
+									
+									&lt;h2>Gender&lt;/h2>
+										&lt;input type = "radio" name  = "gender"> Male		
+										&lt;input type = "radio" name  = "gender"> Female
+								 	
+									
+								Checkbox
+								 - Checkboxes are used when more than one 
+								   options are required to be selected
+								 - these are created using HTML input tag
+								   type = "checkbox"
+
+								&lt;h1>Select your hobby / s &lt;/h1>
+										&lt;input type = "checkbox" name = "chess">Chess
+										&lt;input type = "checkbox" name = "songs">Songs
+										&lt;input type = "checkbox" name = "reading">Reading
+										&lt;input type = "checkbox" name = "movativatoin">Motivation
+										&lt;input type = "checkbox" name = "travelling">Travelling
+										&lt;input type = "checkbox" name = "dancing">Dancing
+										&lt;input type = "checkbox" name = "cooking">Cooking
+										&lt;input type = "checkbox" name = "casting">Casting
+										&lt;input type = "checkbox" name = "Cricket">Cricket
+										&lt;input type = "checkbox" name = "crafting">Crafting
+										&lt;input type = "checkbox" name = "videoseries">Videoseries
+
+								&lt;fieldset>
+								 - it defines group of logically related elements
+								 - elements are grouped inside a box
+								 - it is a paired tag
+
+								&lt;legend>
+								 - it is used with fieldset to give title
+								   to each set of fields
+								 - it is a paired tag
+								 
+								Attributes	Parameters
+								align		right, left, center
+
+								&lt;h1>Welcome to My Traveling co &lt;/h1>
+									&lt;fieldset>
+										&lt;legend> -: Personal Informatoin :- &lt;/legend>
+										&lt;label> First Name :- &lt;/label>
+										&lt;input type = "text">
+										&lt;br>&lt;br>
+										&lt;label> Last Name :- &lt;/label>
+										&lt;input type = "text">
+									&lt;/fieldset>
+										&lt;br>&lt;br>
+									&lt;fieldset>
+										&lt;legend align = "center"> -: Mode of Transport :- &lt;/legend>
+										&lt;input type = radio name = "tr"> Road
+										&lt;input type = radio name = "tr"> Rail
+										&lt;input type = radio name = "tr"> Air
+										&lt;input type = radio name = "tr"> Water
+									&lt;/fieldset>
+										&lt;br>&lt;br>
+									&lt;fieldset>
+										&lt;legend align = "right"> -: Amenities required :- &lt;/legend>
+										&lt;input type = "checkbox" name = "lunch"> Lunch
+										&lt;input type = "checkbox" name = "water"> Drinking Water
+										&lt;input type = "checkbox" name = "Fruits"> Fruits
+										&lt;input type = "checkbox" name = "chocklet"> Chocklet
+									&lt;/fieldset>
+									
+								HTTP:- 
+								 - Hyper Text Transfer Protocol
+								 - it is used to enable / establish
+								   communication between client and server.
+								 - HTTP works as request-response protocol 
+								   between server and client.
+								 - a web browser is client
+								 - the computer who hosts the website is server
+								 
+								HTTP request methods
+								 - there are various methods of HTTP requests
+									Eg	GET, POST, PUT, UPDATE, DELETE, CONNETCT,..etc
+								 - of which two methods are commonly used for request-response
+								   between client and server
+									i) GET
+									ii)POST
+									
+								Action attribute
+								 - this attribute is used to specify url of the
+								   server page to which we want to send our form data.
+								   
+								i) GET methods
+								 - In this method there is no security for data
+								 - This method can send only limited data (2MB)
+								 - It can carry raw data from client to server
+								 
+									&lt;form method = "GET" action = "https://www.google.com" name = "my_form">
+										&lt;label>Username :- &lt;/label> &nbsp;&nbsp;&nbsp;&nbsp;
+										&lt;input type = "text" name = "uname" placeholder = "Enter Username">
+										&lt;br>&lt;br>
+										&lt;label>Password:- &lt;/label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&lt;input type = "password" name = "upwd" placeholder = "Enter Password">
+										&lt;br>&lt;br>
+										&lt;input type = "submit" value = "Login"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&lt;input type = "reset" value = "Clear">
+									&lt;/form>
+
+
+				        	</pre>
+				        </p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header text-center">
+				      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+				        Span, Div, other inputs, Marquee
+				      </a>
+				    </div>
+				    <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+				      <div class="card-body">
+				        <p>
+				        	<pre>
+				        		&lt;span>
+								 - It is used to apply inline styles on some 
+								   specific span
+								   
+								&lt;h1 style = "color : green">
+										&lt;span style = "color:blue"> Good afternoon&lt;/span>
+										&lt;span style = "color:red; font-size : 50px"> students&lt;/span> What are you doing nowdays ?&lt;/h1>
+										
+								&lt;div>
+								 - by using this tag we can design a webpage as multiple
+								   divisions
+								   
+								Attributes	Parameters
+								align		left, right, center										
+								&lt;div style = "background-color : " align = "center">
+											&lt;div style = "background-color : orange;
+														  width : 600px;
+														  height : 100px"> &lt;/div>
+											&lt;div style = "background-color :white;
+														  width : 600px;
+														  height : 100px"> 
+												&lt;img src = "Ashoka_Chakra.png" height = "100">		  
+												&lt;/div>
+											&lt;div style = "background-color : green;
+														  width : 600px;
+														  height : 100px"> &lt;/div>
+										&lt;/div>
+										
+										
+								Other inputs
+									color
+									date
+									month
+									week
+									time
+									file
+									
+										&lt;input type = "color">
+										&lt;br>&lt;br>
+										&lt;input type = "date">
+										&lt;br>&lt;br>
+										&lt;input type = "month">
+										&lt;br>&lt;br>
+										&lt;input type = "week">
+										&lt;br>&lt;br>
+										&lt;input type = "time">
+										&lt;br>&lt;br>
+										&lt;input type = "file								
+									&lt;marquee>
+								 - it is a scrolling piece of html document
+
+
+
+        	</pre>
+        </p>
       </div>
     </div>
   </div>
@@ -286,55 +519,55 @@ ii) &lt;link/>	:-
         <pre>
         	HTML 5 new Tags
 
-&lt;article&gt;	It defines the independent or self-contained content of a webpage.
-&lt;aside&gt;		It defines the content which provide information about the main content.
-&lt;bdi&gt;		It is used to isolate the part of text which might be formatted in another direction.
-&lt;details&gt;	It defines additional information which only visible as per user demand.
-&lt;dialog&gt;	It represents a dialog box or other interactive components.
-&lt;figcaption&gt;	It defines caption for the &lt;figure&gt; element.
-&lt;figure&gt;	It defines a self-contained content, and referenced as a single unit.
-&lt;footer&gt;	It represents the footer section of the webpage.
-&lt;header&gt;	It defines the introductory or navigational content of the webpage.
-&lt;main&gt;		It specifies the main content of the HTML document.
-&lt;mark&gt;		It represent the text which is highlighted or marked for reference or notation purposes.
-&lt;meter&gt;		It represents a scalar value within a known range.
-&lt;nav&gt;		It represents the section which contains navigation links.
-&lt;progress&gt;	It defines a progress bar which shows completions progress of a task.
-&lt;rp&gt;		It defines alternative content for the browser which do not support ruby annotations.
-&lt;rt&gt;		It defines explanations and pronunciations of characters in ruby annotations.
-&lt;ruby&gt;		It defines ruby annotations (Specifically for Asian language).
-&lt;section&gt;	It defines a generic section within an HTML document.
-&lt;summary&gt;	It defines summary or caption for a &lt;details&gt; element which can be clicked to change the state of &lt;details&gt; element.
-&lt;time&gt;		It defines data/time within an HTML document.
-&lt;wbr&gt;		It specifies a line break opportunity. (Where line break possible)
+			&lt;article&gt;	It defines the independent or self-contained content of a webpage.
+			&lt;aside&gt;		It defines the content which provide information about the main content.
+			&lt;bdi&gt;		It is used to isolate the part of text which might be formatted in another direction.
+			&lt;details&gt;	It defines additional information which only visible as per user demand.
+			&lt;dialog&gt;	It represents a dialog box or other interactive components.
+			&lt;figcaption&gt;	It defines caption for the &lt;figure&gt; element.
+			&lt;figure&gt;	It defines a self-contained content, and referenced as a single unit.
+			&lt;footer&gt;	It represents the footer section of the webpage.
+			&lt;header&gt;	It defines the introductory or navigational content of the webpage.
+			&lt;main&gt;		It specifies the main content of the HTML document.
+			&lt;mark&gt;		It represent the text which is highlighted or marked for reference or notation purposes.
+			&lt;meter&gt;		It represents a scalar value within a known range.
+			&lt;nav&gt;		It represents the section which contains navigation links.
+			&lt;progress&gt;	It defines a progress bar which shows completions progress of a task.
+			&lt;rp&gt;		It defines alternative content for the browser which do not support ruby annotations.
+			&lt;rt&gt;		It defines explanations and pronunciations of characters in ruby annotations.
+			&lt;ruby&gt;		It defines ruby annotations (Specifically for Asian language).
+			&lt;section&gt;	It defines a generic section within an HTML document.
+			&lt;summary&gt;	It defines summary or caption for a &lt;details&gt; element which can be clicked to change the state of &lt;details&gt; element.
+			&lt;time&gt;		It defines data/time within an HTML document.
+			&lt;wbr&gt;		It specifies a line break opportunity. (Where line break possible)
 
 
-Graphics Tags	
-&lt;canvas&gt;	It allows drawing graphics and animations via scripting.
-&lt;svg&gt;		It is used to draw scalable vector graphics.
+			Graphics Tags	
+			&lt;canvas&gt;	It allows drawing graphics and animations via scripting.
+			&lt;svg&gt;		It is used to draw scalable vector graphics.
 
 
-HTML5 Media Tags	
-&lt;audio&gt;		It defines sound content.
-&lt;embed&gt;		It defines a container for external files/application/media.
-&lt;source&gt;	It defines multiple media resources for the media elements.
-&lt;track&gt;		It defines text tracks for &lt;audio&gt; and &lt;video&gt; files
-&lt;video&gt;		It defines video content within HTML document.
+			HTML5 Media Tags	
+			&lt;audio&gt;		It defines sound content.
+			&lt;embed&gt;		It defines a container for external files/application/media.
+			&lt;source&gt;	It defines multiple media resources for the media elements.
+			&lt;track&gt;		It defines text tracks for &lt;audio&gt; and &lt;video&gt; files
+			&lt;video&gt;		It defines video content within HTML document.
 
-HTML5 New Inputs
-color			Color selector, which could be represented by a wheel or swatch picker
-date			Selector for calendar date
-datetime-local	Date and time display, with no setting or indication for time zones
-datetime		Full date and time display, including a time zone.
-email			Input type should be an email.
-month			Selector for a month within a given year
-number			A field containing a numeric value only
-range			Numeric selector within a range of values, typically visualized as a slider
-search			Term to supply to a search engine. For example, the search bar atop a browser.
-tel				Input type should be telephone number.
-time			Time indicator and selector, with no time zone information
-url				Input type should be URL type.
-week			Selector for a week within a given year
+			HTML5 New Inputs
+			color			Color selector, which could be represented by a wheel or swatch picker
+			date			Selector for calendar date
+			datetime-local	Date and time display, with no setting or indication for time zones
+			datetime		Full date and time display, including a time zone.
+			email			Input type should be an email.
+			month			Selector for a month within a given year
+			number			A field containing a numeric value only
+			range			Numeric selector within a range of values, typically visualized as a slider
+			search			Term to supply to a search engine. For example, the search bar atop a browser.
+			tel				Input type should be telephone number.
+			time			Time indicator and selector, with no time zone information
+			url				Input type should be URL type.
+			week			Selector for a week within a given year
         </pre>
       </div>
     </div>

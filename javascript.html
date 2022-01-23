@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/245d96fbb1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logoh.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>JavaScript Notes</title>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light navvbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo fw-bold" href="index.html"><span class="logo-im">IM</span><span class="logo-bibe">bibe</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link text-white fw-bold active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="html.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="bootstrap.html">BOOTSTRAP</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="javascript.html">JAVASCRIPT</a>
+              </li>
+              <li class="nav-item ml-5">
+                  <a class="nav-link text-white fw-bold" href="#"><i class="far fa-user"></i></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+
+
+
+  <div class="container-fluid m-0 p-0">
+    <img src="img/bg.jpg" alt="Image" width="100%" height="550px">
+  </div>
+
+
+
+
+<div class="head mt-5"> 
+	<h1 class="text-center m-5">JavaScript NOTES</h1>
+</div> 
+
+<div class="container">
+	<div id="accordion">
+
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        Introduction to JavaScript, Environmental Setup
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Javascript:- 
+             - Javascript is a scripting language.
+             - Javascript is implemented by Brendan in 1995
+               at Netscape.
+             - It was initially named as Livescript.
+             - Latest version is ES11, released in 2020.
+               (ES  -> ECMA script)
+             - Use of Javascript
+              - Scripting
+              - Making Page as dynamic
+              - Client side validation
+              - modern UI framework application
+                - AngularJS
+                - ReactJS
+                - VeuJS
+                - NodeJS
+                - etc
+             - Javascript programs(scripts) can be executed
+               by either web browsers or Node Engines.
+             - Javascript is Object Based Scripting Language.
+             - Javascript supports predefined objects
+              Eg  window,
+                document,
+                console,  etc.
+
+            Environmental setup
+             - VS Code
+              Website :- https://code.visualstudio.com/#alt-downloads
+             - NodeJS
+              Website :- https://nodejs.org/en/download/
+              
+            Note:- Javascript programs must have extension '.js'
+              
+            Execution of Javascript programs
+
+            demo.js
+            console.log("Hello world")
+
+            1. Command prompt
+              >node demo.js
+              Note:- 'document' object not supported here
+              
+            2. HTML
+            index.html
+              ...
+                &lt;script src = "demo.js"&gt;
+              ...
+              
+              - open this file in web browser
+              - inspect console
+              
+            3. HTML with script
+              ...
+                &lt;script&gt;
+                  console.log("Hello World")
+                &lt;/script&gt;
+              ...
+              
+              - open this file in web browser
+              - inspect console
+              
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Variables in JavaScript
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Variables:- 
+             - Variables are used to store data.
+             - by using variables we can store any type of data,
+              Eg  numbers, strings, files, audio, video, etc.
+             - Variables can be declared using 'var', 'let', 'const'.
+             - 'let' and 'const' keywords introduced in ES5.
+             
+            String:-
+             - Strings can be declared with '', "", ``
+             - `` is introduced in ES6.
+             - `` is used to define multiline strings.
+              
+            var wish = 'Good afternoon'
+            console.log(wish)
+            var sub = 'Javascript'
+            console.log(sub)
+            var myWish = `Welcome to ${sub}`
+            console.log(myWish)
+
+            Numbers:- 
+             - Javascript supports decimal, double, hexadecimal, octal and binary numbers.
+              
+            var decimal = 100
+            console.log(decimal)
+            var double = 12.43
+            console.log(double)
+            var hexadecimal = 0x12ab
+            console.log(hexadecimal)
+            var octal = 0o127
+            console.log(octal)
+            var binary = 0b11
+            console.log(binary)
+            //Output will be in base 10 form
+            //all alphabates are case insensitive
+
+            Boolean
+            var flag = true
+            console.log(flag)
+            var flag = false
+            console.log(flag)
+              
+              
+              
+            //var v/s let
+            //Eg01
+            /*
+            for(var i = 0; i < 10; i++)
+            {}
+            console.log(i)
+
+            for (let i = 0; i < 10; i++)
+            {}
+            console.log(i)  //ReferenceError: i is not defined
+
+            //Eg02
+            var data = 200
+            var data = 400
+            console.log(data)
+            let num = 100
+            //let num = 200     //SyntaxError: Identifier 'num' has already been declared
+            console(num)
+
+            //Eg03
+            var data = 100
+            {
+                var data = 200
+            }
+            console.log(data)   //200
+            let num = 100
+            {
+                let num = 200
+            }
+            console.log(num)    //100
+            //global polluting issue:- local variables affecting global variables.
+
+            //Eg04
+
+            console.log(data)
+            var data = 100
+            //console.log(num)    //ReferenceError: Cannot access 'num' before initialization
+            let num = 200
+            */
+            //Eg05
+            const data = {
+                value : 100
+            }
+            console.log(data.value)
+            data.value = 200
+            console.log(data.value)
+            data = {}       //TypeError: Assignment to constant variable.
+              
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+         Operators in JavaScript
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Operators
+            i)Arithmetic operators  -> eg +, -, *, /, %, ++, --, **
+            ii)Relational operators -> eg ==, !=, >, <, >=, <=, 
+            iii)Logical operators -> eg &&, ||, !
+            iv)Bitwise operators  -> eg &, |, ^, ~, <<, >>
+            v)Assignmet operators -> eg =, +=, -=, *=, /=,...,<<=,>>=,...
+            Strictly equal to     -> ===
+
+            i)Arithmetic Operators:-
+            Consider A = 25, B = 7,   Calculate C
+            C = A + B it adds A & B,      C = 32
+            C = A - B it substracts B from A  C = 18
+            C = A * B it multiplies A and B   C = 175
+            C = A / B it devides A by B     C = 3.571428571428571
+            C = A % B it stores reminder of division of A by B, C = 4
+            A++ it increments A by 1  A = 26
+            B-- it decrements B by 1  B = 6
+            3 ** 4  -> 81
+
+
+
+
+
+
+            ii)Relational Operators:- 
+            Consider A = 5, B = 10, C = 5
+            d = '5'
+            A == B    False
+            A == C    True
+            A == d    True
+            A === d   False
+            A != B    True
+            A > C     False
+            A >= C    True
+            B >= A    True
+            C < B     True
+            B < C     False
+
+
+
+
+
+
+
+
+
+
+
+            iii)Logical Operators
+            Consider A = 1, B = 0
+            (A && B) -> 0
+            (A || B) -> 1
+            !(A && B)-> True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            iv)Bitwise Operators
+            Truth Table
+            a b a&b a|b a^b ~a  ~b
+            0 0  0   0   0  -1  -1
+            0 1  0   1   1  -1  -2
+            1 0  0   1   1  -2  -1
+            1 1  1   1   0  -2  -2
+
+            2's complement form = 1's complement + 1
+            1's complement form = replace 0's with 1's and vice versa
+
+
+              dec   bin   1's   2's   dec
+              10    1010  0101  0110  -10
+              11    1011  0100  0101  -11
+              12    1100  0011  0100  -12
+              13    1101  0010  0011  -13
+              14    1110  0001  0010  -14
+              15    1111    0000  0001  -15
+
+            Shifting  << left shift -> pad 0's
+                  >> rignt shift  -> bit discard
+            consider C = 4, bin form 0100
+                bin   shift dec
+            C << 1  0100  01000 8
+            C >> 1  0100  010   2
+
+            5<<2
+            7<<2
+            120>>2
+
+
+
+
+
+
+            5<<2    0101   10100    20
+            7<<2     111   11100    28
+            120>>2   1111000   11110    30
+
+            v) Assignmet operators
+            Consider A = 5
+            Expression  Result
+            C = A          5       
+            C += A    C = C + A 10
+            C -= A    C = C - A    5
+            C *= A    C = C * A   25
+            C /= A    C = C / A    5
+
+            C <<= 2   C = C << 2  20
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+         Control Statements
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Control Statements:- 
+             - changing flow of a program.
+
+            types
+                i)Decision Control
+                ii)Looping Control
+                iii)Case Control
+
+
+            i) Decision Control(if Statements)
+            /*Simple if*/
+            if(no < 0)
+                negative
+
+            /*if-else*/
+            if (no < 0)
+                negative
+            else
+                positive
+
+            /*if-else ladder*/
+            if (no < 0)
+                negative
+            else if (no > 0)
+                positive
+            else    
+                zero
+
+            Short Assignment
+            Find biggest number among 3
+
+            a 
+            b
+            c
+              
+              if a > b && a > c
+                a
+              else if b > c
+                b
+              else 
+                c
+              
+
+            ii)Looping Control
+            important 
+                Intitalization
+                Termination
+                Incrementing Factor
+
+            i) for loop
+            ii)while loop
+            iii)do while loop
+
+            i)for loop
+            syntax  for(Intitalization;Termination;Incrementing Factor)
+
+            ii)while
+            syntax
+            Intitalization
+            while(Termination)
+            {
+                //body
+                Incrementing Factor
+            }
+
+            iii)do while loop
+            syntax
+            Intitalization
+            do
+            {
+                //body
+                Incrementing Factor
+            }
+            while(Termination)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            1. Print a table for given number (both orders)
+            2. calculate factorial of a number
+                5! = 5 x 4 x 3 x 2  = 120
+                6! = 6 x 5 x 4 x 3 x 2 = 720
+              
+              
+            no = 5
+            fact = 1
+            for(i = no; i >= 2; i--)
+                no = no * i
+            console.log(no)
+
+            iii)case control
+            switch(choice):
+            {
+                case 1:
+                    //
+                break
+
+                case 2:
+                    //
+                break
+
+                ...
+
+                default:
+                break   /*optional for last case*/
+            }
+
+            Assignment
+            Case study of grade calculation
+            per < 40    -> failed
+            41 - 50     -> pass
+            51 - 55     -> SC
+            56 - 60     -> HSC
+            61 - 65     -> FC
+            65 >        -> FC with distiction
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+        JavaScript Functions - Named, Anonymous , Inputs Outputs
+      </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Functions
+             - A particular business logic is called as function.
+             - Functions are used to reuse business logic.
+             - We have following type of functions
+              i) Named functions
+              ii)Anonymous functions
+              iii)Constructor functions 
+             - We can pass various types parameters to functions
+              i) Rest Parameters
+              ii)Optional Parameters
+              iii)Default Parameters
+              
+            i) Named functions
+             - function with name is called as named functions
+             
+            Syntax
+              //function definiton
+              function function_name(parameters)
+              {
+                //business logic
+              }
+              
+              //calling function
+              function_name(arguments)
+              
+            /*
+            Eg01
+                create a function 
+                    @fun_one
+                fun_one return "Hello...!"
+
+            function fun_one()
+            {
+                return "Hello...!"
+            }
+            console.log(fun_one)        //function definition
+            console.log(fun_one())      //function output
+
+            Eg02
+                create a function
+                    @fun_one
+                fun_one have three arguments
+                    @arg1,
+                    @arg2,
+                    @arg3
+                fun_one return above arguments
+
+            function fun_one(arg1, arg2, arg3)
+            {
+                return arg1+"{--}"+arg2+"{--}"+arg3
+            }
+            console.log(fun_one("abc",123,12.5))
+            console.log(fun_one("Milk","Tea","Coffee"))
+
+            Eg03
+            fun_one return fun_two definition
+            */
+            function fun_one()
+            {
+                return fun_two
+            }
+
+            function fun_two()
+            {
+                return "Hello...!"
+            }
+
+            console.log(fun_one)        //fun_one definition
+            console.log(fun_one())      //fun_one o/p -> fun_two definition
+            console.log(fun_one()())    //fun_two o/p
+
+
+            Anonymous functions
+             - the function without name is called as anonymous function.
+             - these are also called as arrow functions or callback functions.
+             - we can represent arrow functions by '=>' arrow symbol.
+             - Arrow functions introduced in ES6.
+             - Arrow functions are more secured than named functions.
+             - anonymous functions utilize heap memory efficiently.
+
+            Syntax
+              //function definition
+              var / let variablename = (arguments) => {
+                //business logic    
+              }
+              
+              //calling function
+              variablename(parameters)
+
+
+            /*
+            Eg01
+                create anonymous function with following variables
+                    @fun_one
+                fun_one return "I am from arrow function"
+
+            var fun_one = () => {
+                return "I am from arrow function"
+            }
+            console.log(fun_one())
+
+            Eg02
+                create anonymous function using following variables
+                    @fun_one
+                fun_one have three arguments
+                    @arg1,
+                    @arg2,
+                    @arg3
+                fun_one prints above arguments
+
+            var fun_one = (arg1, arg2, arg3) =>{
+                console.log(arg1, arg2, arg3)
+            }
+            fun_one(10,20,30)
+            fun_one(10,20,'30')
+            fun_one('10',20,30)
+            fun_one("Angular","ReactJS","VeuJS")
+
+            Eg03
+                one anonymous function return another anonymous function
+            */
+            var fun_one = () =>{
+                return () => {
+                    return 'Good evening'
+                }
+            }
+
+            console.log(fun_one)        //?
+            console.log(fun_one())      //?
+            console.log(fun_one()())    //?
+
+            Inputs and outputs:- 
+            prompt
+            let var_one = document.getElementById(id).value
+            document.getElementById(id).innerHTML = res
+            window.open(&lt;filename.html>)
+
+
+            Script file
+            function fun_one(){
+                var var_one = prompt("Enter a number:- ")
+                let fact = 1
+                for(let i = 2; i<= var_one;i++)
+                    fact *= i
+                alert(var_one+"! = "+fact)
+            }
+
+            function facto() {
+                let fact = 1
+                var var_one = document.getElementById('no').value
+                for(let i = 2; i<= var_one;i++)
+                    fact *= i
+                document.getElementById('fact').innerHTML = fact
+            }
+                
+            function login() {
+                var uname = document.getElementById('uname').value
+                var upwd = document.getElementById('upwd').value   
+                if(uname == 'admin' && upwd == 'admin')
+                {
+                    window.open('thanku.html')
+                }
+                else
+                    alert("Login failed")
+            }
+
+
+            Markup file
+            &lt;script src="ipdem.js">&lt;/script>
+            &lt;button onclick="fun_one()">Click Me&lt;/button>
+
+            &lt;input type="number" placeholder="Enter a number" id = "no">
+            &lt;br>
+            &lt;label id = "fact">&lt;/label>
+            &lt;br>
+            &lt;button onclick="facto()">Factorial&lt;/button>
+            &lt;hr>
+            &lt;input type="text" placeholder="Username" id = 'uname'>
+            &lt;br>
+            &lt;input type="password" placeholder="Password" id = 'upwd'>
+            &lt;br>
+            &lt;button onclick="login()">Login&lt;/button>
+
+            Assignment:-
+            Design a simple calculator
+              - accept numbers in input
+              - display output
+              - operations + - x /
+              - Apply approperate styling
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+         Constructor functions, Prototypes, Prototype chaining, Arguments to functions
+      </a>
+    </div>
+    <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Constructor Functions:- 
+             - Constructor Function is used to create class like structure.
+             - In constructor function everything (variables and functions) should
+               start with 'this' keyword.
+             - We can create object to constructor using 'new' keyword.
+             
+            /*
+            //Eg01
+            function class_one()
+            {
+                this.wish = "Welcome to contructor functions"
+            }
+            var obj = new class_one()
+            console.log(obj.wish)
+
+            //Eg02
+            function class_one()
+            {
+                this.sub_one = "Angular"
+                this.sub_two = "NodeJS"
+                this.sub_three = "MongoDB"
+            }
+            var obj = new class_one()
+            console.log(obj.sub_one, obj.sub_two,obj.sub_three)
+
+            //Eg03
+            function class_one()
+            {
+                this.myWish = () => {
+                    return "Good afternoon"
+                }
+
+                this.yourWish = ()=>{
+                    return "Happy birthday"
+                }
+            }
+
+            var obj = new class_one()
+            console.log(obj.myWish)
+            console.log(obj.myWish())
+            console.log(obj.yourWish())
+
+            //Eg04
+            function class_one()
+            {
+                this.sub_one = `Javascript`
+                this.wish = function(){
+                    return `Welcome to ${this.sub_one}`
+                }
+            }
+            console.log(new class_one().wish())
+
+            */
+            //Eg05
+            function class_one(arg1, arg2, arg3)
+            {
+                this.sub_one = arg1
+                this.sub_two = arg2
+                this.sub_three = arg3
+            }
+            let obj = new class_one(1,2.3,'abc')
+            console.log(obj.sub_one, obj.sub_two, obj.sub_three)
+            let obj2 = new class_one("ReactJS",3000,false)
+            console.log(obj2.sub_one, obj2.sub_two, obj2.sub_three)
+
+
+            Prototype:-
+             - Prototype is a property which adds members to constructor dynamically.
+
+            //Eg01
+            function class_one(){}
+            class_one.prototype.wish = `Welcome to Prototype`
+            console.log(new class_one().wish)
+
+            //Eg02
+            class_one.prototype.sub_one = "Angular"
+            class_one.prototype.sub_two = "NodeJS"
+            class_one.prototype.sub_three = "MongoDB"
+            let obj = new class_one()
+            console.log(obj.sub_one, obj.sub_two, obj.sub_three)
+
+            //Eg03
+            class_one.prototype.getWish = () =>{
+                return 'good evening'
+            }
+            console.log(obj.getWish())
+
+            Prototype Chaining:-
+             - Nesting one constructor prototype to another constructor
+               is called as prototype chaining.
+             - Concept of inheritance is achieved with prototype chaining.
+
+            /*
+            //Eg01
+            function class_one(){}
+            class_one.prototype.wish = `Welcome to Prototype`
+            console.log(new class_one().wish)
+
+            //Eg02
+            class_one.prototype.sub_one = "Angular"
+            class_one.prototype.sub_two = "NodeJS"
+            class_one.prototype.sub_three = "MongoDB"
+            let obj = new class_one()
+            console.log(obj.sub_one, obj.sub_two, obj.sub_three)
+
+            //Eg03
+            class_one.prototype.getWish = () =>{
+                return 'good evening'
+            }
+            console.log(obj.getWish())
+
+            //Eg01
+            function class_one(){}
+            class_one.prototype.fun_one = function(){
+                return "I am from function one"
+            }
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype)
+            class_two.prototype.fun_two = function(){
+                return "I am from function two"
+            }
+
+            obj = new class_two()
+            console.log(obj.fun_one())
+            console.log(obj.fun_two())
+
+            //Eg02
+            function class_one(){}
+            class_one.prototype.var_one = 12
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype)
+            class_two.prototype.var_two = 14.7
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype)
+            class_three.prototype.var_three = 'abc'
+
+            var obj = new class_three()
+            console.log(obj.var_one, obj.var_two, obj.var_three)
+            */
+
+
+            //Eg03
+            function class_one(){}
+            class_one.prototype.dbFun = () =>{
+                return "MySql data soon"
+            }
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype)
+            class_two.prototype.dbFun = () =>{
+                return "MongoDB data soon...!"
+            }
+
+            let obj = new class_two()
+            console.log(obj.dbFun())
+
+            Passing parameters to functions
+            1. Default parameters
+             - It allows named parameters to be intialysed with default
+               values if no value or undefined is passed.
+
+            function fun_one(arg1 = 10, arg2 = "FullStack", arg3 = "Angular")
+            {
+                console.log(arg1, arg2, arg3)
+            }
+
+            fun_one()                               //10 FullStack Angular
+            fun_one(25)                             //25 FullStack Angular
+            fun_one(undefined,"MERN")               //10 MERN Angular
+            fun_one(undefined,undefined,undefined)  //10 FullStack Angular
+            fun_one(null, null, null)               //null null null
+            fun_one(null, undefined, "MongoDb")     //null FullStack MongoDb
+            fun_one(undefined,'undefined',undefined)//10 undefined Angular
+
+            2. Optional Parameters
+             - While calling a function no need to pass all arguments.
+             - We can keep few arguments as optional.
+             - Optional parameters instroduced in ES6.
+
+            function fun_one(arg1, arg2, arg3)
+            {
+                console.log(arg1, arg2, arg3)
+            }
+
+            fun_one()                               //undefined undefined undefined
+            fun_one("Hello_1")                      //Hello_1 undefined undefined
+            fun_one(null,"Hello_2")                 //null Hello_2 undefined
+            fun_one(10, 15.7,"MEAN")                //10 15.7 MEAN
+            fun_one(null, null, null)               //null null null
+
+            3. Rest Parameters
+             - it is improved way to handle function parameters.
+             - It allows us to represent infinite number of arguments as an array.
+             - rest parameters represented by '...'
+            function fun_one(...arg)
+            {
+                console.log(arg)
+            }
+            fun_one("Angular")                          //[ 'Angular' ]
+            fun_one()                                   //[]
+            fun_one(`Angular`,`FullStack`)              //[ 'Angular', 'FullStack' ]
+            fun_one(undefined,null)                     //[ undefined, null ]
+            */
+
+            function fun_one(arg1, arg2 = "Hello_2",...arg3)
+            {
+                console.log(arg1, arg2, arg3)
+            }
+            fun_one("Hello_1")                                  //Hello_1 Hello_2 []
+            fun_one("Hello_1",undefined,"Hello_3")              //Hello_1 Hello_2 [ 'Hello_3' ]
+            fun_one("Hello_1","Hello_2","Hello_3","Hello_4")    //Hello_1 Hello_2 [ 'Hello_3', 'Hello_4' ]
+            fun_one(undefined,undefined,undefined)              //undefined Hello_2 [ undefined ]
+            fun_one(undefined,undefined,[1,2,3],[4,5,6])
+            //function fun_one(...arg1, ...arg2){}              //SyntaxError: Rest parameter must be last formal parameter
+            //function fun_one(...arg1, arg2){}                 //SyntaxError: Rest parameter must be last formal parameter
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+        JSON
+      </a>
+    </div>
+    <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            JSON
+             - JSON stands for JavaScript Object Notation.
+             - JSON os is used to share data over Network.
+             - JSON is light weight as compared to XML.
+             - Parsing (reading) of JSON is easy as compared to XML.
+             - Syntax
+              Object  {}
+              Arrays  []
+              data  key and value pairs
+                  keys and values are separated by ':'
+                  key value pairs are separated by ','
+                  
+            //Eg01
+            var demo = {
+                'sub_one' : 'HTML',
+                "sub_two" : "CSS",
+                sub_three : 'Bootstrap',
+                key1      : 15
+            }
+            console.log(demo)
+            console.log(demo.sub_one, demo.sub_two, demo.sub_three,demo.key1)
+            //Iterate this JSON
+            for(var x in demo)
+                //console.log(x)
+                console.log(demo[x])
+
+            */
+            //freeze() and seal()
+            freeze()  -> Read   allowed
+                  -> Update denied
+                  -> Write  denied
+                  -> Delete denied
+            seal()    -> Read   allowed
+                  -> Update allowed
+                  -> Write  denied
+                  -> Delete denied
+                  
+            var obj = {
+                "p_id" : 111
+            }
+            console.log(obj)
+            //add new data
+            obj.p_name = "p_one"
+            console.log(obj)
+            //modify data
+            obj.p_id = 101
+            console.log(obj)
+            /*
+            //lock object
+            Object.freeze(obj)
+            //try to modify data
+            obj.p_id = 100
+            console.log("Modified",obj)     //no error no update
+            //try to add new data
+            obj.p_cost = 10000
+            console.log("Modified",obj)     //no error no update
+            //try to delete data
+            delete obj.p_id
+            console.log("Modified",obj)     //no error no update
+            */
+            //lock object
+            Object.seal(obj)
+            //try to modify data
+            obj.p_id = 100
+            console.log("Modified",obj)     //update success
+            //try to add new data
+            obj.p_cost = 10000
+            console.log("Modified",obj)     //no error no update
+            //try to delete data
+            delete obj.p_id
+            console.log("Modified",obj)     //no error no update     
+
+            //defineProperty
+            let obj = {
+                p_id : 111
+            }
+            console.log(obj)    //{ p_id: 111 }
+            Object.defineProperty(obj,"p_name",{value:"P_one",writable:false})
+            console.log(obj)    //{p_id: 111, p_name: 'P_one'}
+            obj.p_id = 101
+            console.log(obj)    //{p_id: 101, p_name: 'P_one'}
+            obj.p_name = "P_two"
+            console.log(obj)    //no error no update
+            */
+            //defineProperties
+            var obj = {
+                p_id : 111
+            }
+            console.log(obj)
+            Object.defineProperties(obj,{
+                p_name : {value : "P_one",writable:true},
+                p_cost : {value : 10000, writable : false}
+            })
+            console.log(obj)
+            obj.p_id = 101
+            obj.p_name = "P_ONE"
+            obj.p_cost = 11111
+            console.log(obj)
+
+            entries()   -> object to array
+            fromEntries() -> array(valid) to object 
+
+            var obj = {
+                p_id : 111,
+                p_name : "p_one",
+                p_cost : 10000
+            }
+            console.log(obj)    //{p_id: 111, p_name: 'p_one', p_cost: 10000}
+            let arr = Object.entries(obj)
+            console.log(arr)    //[["p_id", 111],["p_name", "p_one"],["p_cost", 10000]]
+            let arr1 = [["p_id", 111],["p_name", "p_one"],["p_cost", 10000]]
+            let obj1 = Object.fromEntries(arr1)
+            console.log(arr1)    //[["p_id", 111],["p_name", "p_one"],["p_cost", 10000]]
+            console.log(obj1)   //{p_id: 111, p_name: 'p_one', p_cost: 10000}
+
+            &lt;script >
+                //Populate JSON in HTML table
+            var products = [
+                {p_id : 111, p_name : "P_one", p_cost : 10000},
+                {p_id : 222, p_name : "P_two", p_cost : 20000},
+                {p_id : 333, p_name : "P_three", p_cost : 30000},
+                {p_id : 444, p_name : "P_four", p_cost : 40000},
+                {p_id : 555, p_name : "P_five", p_cost : 50000}
+            ]
+
+            document.write(`
+                &lt;table border = "1px"
+                       cellpadding = "10px"
+                       cellspacing = "10px"
+                       align = "center">
+
+                &lt;thead>
+                    &lt;tr>
+                        &lt;th>Sr No&lt;/th>
+                        &lt;th>ID&lt;/th>
+                        &lt;th>Name&lt;/th>
+                        &lt;th>Cost&lt;/th>
+                    &lt;/tr>
+                &lt;/thead>
+
+                &lt;tbody>
+            `)
+            products.forEach((element, index)=>{
+                document.write(`
+                    &lt;tr>
+                        &lt;td>${index + 1}&lt;/td>
+                        &lt;td>${element.p_id} &lt;/td>
+                        &lt;td>${element.p_name} &lt;/td>
+                        &lt;td>${element.p_cost} &lt;/td>
+                    &lt;/tr>
+                `)
+            })
+            document.write(`
+                &lt;/tbody>
+            &lt;/table>
+            `)
+
+
+            &lt;/script>
+
+
+            ** To Do Assignment**
+            Populate JSON in HTML table
+            URLs
+            1. https://restcountries.com/v2/all
+              any 4 keys
+            2. https://www.w3schools.com/angular/customers.php
+              all
+              
+            for hint
+            http://jsonviewer.stack.hu/
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header text-center">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+        Promises and Callbacks
+      </a>
+    </div>
+    <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p>
+          <pre>
+            Promises:- 
+             - Promises are used to handle asynchronous operations in Javascript.
+             - Promises are special Javascript objects.
+             - Promises have two states
+              - Success (resolve)
+              - Failure (reject)
+             - Promises can be created using 'Promise' class.
+             - 'Promise' is the predefined class in Javascript.
+             - Promises can be consumed using 'then()'
+             
+            /*
+            //Eg01
+            //creating promise
+            let my_promise = new Promise((resolve, reject)=>{
+                resolve("Tomorrow i will be at home")
+            })
+
+            //consume promise
+            my_promise.then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+
+            //Eg02
+            let my_promise = new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve("Success....!")
+                },5000)
+            })
+
+            my_promise.then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+
+            //Eg03
+            let my_promise = new Promise((resolve, reject)=>{
+                reject("Failure")
+                resolve("Success")
+            })
+
+            my_promise.then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+            */
+            //Eg04
+            let my_promise = new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve("Success")
+                },5000)
+                setTimeout(()=>{
+                    reject("Failure")
+                },6000)
+            })
+             
+            my_promise.then((posRes)=>{
+                console.log(posRes)
+            },(errRes)=>{
+                console.log(errRes)
+            })
+
+
+            async and await
+             - Netscape released above keywords in ES9.
+             - Above keywords are used to increase code readability.
+             - These keywords increase application performance.
+
+            //Eg05
+            let my_promise = new Promise((resolve, reject)=>{
+                resolve("Hello")
+            })
+
+            async function my_fun()
+            {
+                let res = await my_promise
+                console.log(res)
+            }
+            my_fun()
+            */
+            //Eg06
+            function add(num)
+            {
+                return new Promise((resolve, reject)=>{
+                    resolve(num + 5)
+                })
+            }
+
+            function sub(num)
+            {
+                return new Promise((resolve, reject)=>{
+                    resolve (num - 3)
+                })
+            }
+            async function my_fun()
+            {
+                let res1 = await add(5)
+                let res2 = await sub(res1)
+                console.log(res2)
+            }
+            my_fun()
+
+            Callbacks:- 
+             - Passing one function to another function as argument is called as callback.
+
+            /*
+            //Eg01
+            function fun_one(arg)
+            {
+                console.log(arg())
+            }
+
+            fun_one(()=>{
+                return "Hello...!"
+            })
+
+            //Eg02
+            function fun_one(arg1, arg2, arg3)
+            {
+                console.log(arg1(),arg2(),arg3())
+            }
+
+            fun_one(()=>{
+                return 123
+            },()=>{
+                return "Good evening"
+            },()=>{
+                return "Javascript"
+            })
+
+            //Eg03
+            function add(num, callback)
+            {
+                return callback((num + 5),false)
+            }
+
+            add(7,(addRes,error)=>{
+                if(!error)
+                {
+                    console.log(addRes)
+                }
+            })
+
+            //Eg04
+            function add(num, callback)
+            {
+                return callback((num+5),false)
+            }
+
+            function sub(num, callback)
+            {
+                return callback((num - 3),false)
+            }
+
+            function mul(num, callback)
+            {
+                return callback((num * 4),false)
+            }
+
+            function div(num, callback)
+            {
+                return callback((num/2),false)
+            }
+
+            add(5,(addRes,err)=>{
+                if(!err)
+                {
+                    sub(addRes,(subRes,err)=>{
+                        if(!err)
+                        {
+                            mul(subRes,(mulRes,err)=>{
+                                if(!err)
+                                {
+                                    div(mulRes,(divRes,err)=>{
+                                        if(!err)
+                                        {
+                                            console.log(divRes)
+                                        }
+                                    })
+                                }
+                            })
+                        }
+                    })
+                }
+            })
+            //call back hell
+
+            */
+            //Eg06
+            function add(num)
+            {
+                return new Promise((resolve, reject)=>{
+                    resolve(num + 5)
+                })
+            }
+
+            function sub(num)
+            {
+                return new Promise((resolve,reject)=>{
+                    resolve(num - 3)
+                })
+            }
+
+            function mul(num)
+            {
+                return new Promise((resolve, reject)=>{
+                    resolve(num * 4)
+                })
+            }
+
+            function div(num)
+            {
+                return new Promise((resolve, reject)=>{
+                    resolve(num / 2)
+                })
+            }
+            async function myFun()
+            {
+                let addRes = await add(5)
+                let subRes = await sub(addRes)
+                let mulRes = await mul(subRes)
+                let divRes = await div(mulRes)
+                console.log(divRes)
+            }
+
+            myFun()
+
+
+
+          </pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+  <footer class="foter p-2">
+    <div class="container">
+      <p class="text-white text-center">Copyright by IMbibe | &copy 2022 | All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
