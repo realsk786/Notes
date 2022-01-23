@@ -11,16 +11,55 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="img/logoh.jpg">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>HTML Notes</title>
 </head>
 <body>
+
+
+ 	<nav class="navbar navbar-expand-lg navbar-light navvbar fixed-top">
+  		<div class="container">
+    		<a class="navbar-brand logo fw-bold" href="index.html"><span class="logo-im">IM</span><span class="logo-bibe">bibe</span></a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        			<li class="nav-item">
+          				<a class="nav-link text-white fw-bold active" aria-current="page" href="index.html">HOME</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link text-white fw-bold" aria-current="page" href="html.html">HTML</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link text-white fw-bold" aria-current="page" href="css.html">CSS</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link text-white fw-bold" aria-current="page" href="bootstrap.html">BOOTSTRAP</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link text-white fw-bold" aria-current="page" href="javascript.html">JAVASCRIPT</a>
+        			</li>
+        			<li class="nav-item ml-5">
+          				<a class="nav-link text-white fw-bold" href="#"><i class="far fa-user"></i></a>
+        			</li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
+
+	<div class="container-fluid m-0 p-0">
+		<img src="img/bg.jpg" alt="Image" width="100%" height="550px">
+	</div>
+
+
 	<h1 class="text-center m-5">HTML NOTES</h1>
 
-	<div id="accordion">
+	<div id="accordion" class="container">
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
         Introduction to HTML
       </a>
@@ -49,7 +88,7 @@
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
         History of HTML
       </a>
@@ -70,7 +109,7 @@
   </div>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
          Features of HTML
       </a>
@@ -85,31 +124,135 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
          HTML Tags
       </a>
     </div>
     <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
-      </div>
+        <p>
+        	<pre>
+        		HTML is completely enclosed in tags
+
+What is Tag ?
+ - Text palced between '<' and '>' is called as tag
+	Eg &lt;html>
+	
+Tags are classified into two types
+	1. Paired tags
+	2. Non-Paired tags
+	
+1. Paired tags
+	- The tags that have both opening and closing
+	  tags are called as paried tags.
+	Eg	
+		&lt;html&gt;
+			...
+			...
+			...
+		&lt;/html&gt;
+		
+		&lt;body&gt;
+			...
+			...
+			...
+		&lt;/body&gt;
+	Note:- The closing tags start with '/'
+
+
+2. Non-Paired
+	- The tags that have only opening tag but no closing
+	  tag are called as non-paired tags.
+	- These tags are also called as 
+		i) Self closed tags
+		ii)Forcefully closed tags
+		iii)Empty tags
+		iv)Singular tags.
+		
+	Eg	&lt;br&gt;	or 	&lt;br/&gt;	Break tag(line break)
+		&lt;hr&gt;	or 	&lt;hr/&gt;	Hrizontal rule (h. line)
+		&lt;img&gt;	or	&lt;img/&gt;	image tag
+        	&lt;/pre&gt;
+        &lt;/p&gt;
+    </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
         HTML Skeleton
       </a>
     </div>
     <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        	<p><code>&lt;html&gt;</code> <br> &nbsp;&nbsp;&nbsp;&nbsp; <code>&lt;head&gt;</code><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> <br> &nbsp;&nbsp;&nbsp;&nbsp; <code>&lt;/head&gt;</code> <br> &nbsp;&nbsp;&nbsp;&nbsp;
+			<code>&lt;body&gt;</code> <code>&lt;/body&gt;</code> <br> <code>&lt;/html&gt;</code></p>
+			<pre>
+				Working with HTML
+ - Open any text editor for eg notepad, notepad++, sublime text, etc
+ - Save this file with any name and extension '.html' or '.html'
+	Eg 'index.html'
+ - run above file in any web browser eg. MS Internet explorer, MS edge,
+	google chrome, MFF, Safari, Opera, UCB, etc
+		
+&lt;html>
+	&lt;head>
+		&lt;title>My first web page &lt;/title>
+	&lt;/head>
+	&lt;body>
+		Hello world
+		&lt;h1>Welcome to Fist HTML session &lt;/h1>
+	&lt;/body>
+&lt;/html>
+
+Note :- HTML is case insensitive 
+means A and a are same
+
+Comment:-
+ - Comments provide additional information about that code.
+ - Comments are not displayed on web page.
+ - &lt;!-- This is comment -->
+		
+Sections in html
+	1. Head section
+	2. Body section
+
+&lt;!doctype html>
+ - is used to tell web browser that 
+   < > are tags
+   
+1. Head
+ - This section contains root element as &lt;head> tag
+ - It is a a pired tag
+ - This tag contain following tags
+ 
+i) &lt;title>		Document title
+ii)&lt;link/>		Link to external document
+iii)&lt;meta/>		Meta information
+iv)&lt;style>		Used for styling
+v)&lt;script>		Used to provide script
+
+ii) &lt;link/>	:- 
+	Attributes	href, rel, type
+	Eg Displaing favicon
+	favicon - it is a graphical image associcated
+	with title of web page.
+	its size should be 16 x 16 px or 32 x 32 px
+	
+	Paths
+		i) Relative	path
+		ii)Absolute	path
+		   complete path
+		   full path
+		   
+			</pre>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
          HTML Head Section
       </a>
@@ -121,7 +264,7 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
         HTML Body Section
       </a>
@@ -133,23 +276,80 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-center">
       <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
-        HTML Attributes
+        HTML 5 new Tags, Graphic Tags, HTML 5 Media Tags, HTML 5 New Inputs
       </a>
     </div>
     <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
       <div class="card-body">
-        Lorem ipsum..
+        <pre>
+        	HTML 5 new Tags
+
+&lt;article&gt;	It defines the independent or self-contained content of a webpage.
+&lt;aside&gt;		It defines the content which provide information about the main content.
+&lt;bdi&gt;		It is used to isolate the part of text which might be formatted in another direction.
+&lt;details&gt;	It defines additional information which only visible as per user demand.
+&lt;dialog&gt;	It represents a dialog box or other interactive components.
+&lt;figcaption&gt;	It defines caption for the &lt;figure&gt; element.
+&lt;figure&gt;	It defines a self-contained content, and referenced as a single unit.
+&lt;footer&gt;	It represents the footer section of the webpage.
+&lt;header&gt;	It defines the introductory or navigational content of the webpage.
+&lt;main&gt;		It specifies the main content of the HTML document.
+&lt;mark&gt;		It represent the text which is highlighted or marked for reference or notation purposes.
+&lt;meter&gt;		It represents a scalar value within a known range.
+&lt;nav&gt;		It represents the section which contains navigation links.
+&lt;progress&gt;	It defines a progress bar which shows completions progress of a task.
+&lt;rp&gt;		It defines alternative content for the browser which do not support ruby annotations.
+&lt;rt&gt;		It defines explanations and pronunciations of characters in ruby annotations.
+&lt;ruby&gt;		It defines ruby annotations (Specifically for Asian language).
+&lt;section&gt;	It defines a generic section within an HTML document.
+&lt;summary&gt;	It defines summary or caption for a &lt;details&gt; element which can be clicked to change the state of &lt;details&gt; element.
+&lt;time&gt;		It defines data/time within an HTML document.
+&lt;wbr&gt;		It specifies a line break opportunity. (Where line break possible)
+
+
+Graphics Tags	
+&lt;canvas&gt;	It allows drawing graphics and animations via scripting.
+&lt;svg&gt;		It is used to draw scalable vector graphics.
+
+
+HTML5 Media Tags	
+&lt;audio&gt;		It defines sound content.
+&lt;embed&gt;		It defines a container for external files/application/media.
+&lt;source&gt;	It defines multiple media resources for the media elements.
+&lt;track&gt;		It defines text tracks for &lt;audio&gt; and &lt;video&gt; files
+&lt;video&gt;		It defines video content within HTML document.
+
+HTML5 New Inputs
+color			Color selector, which could be represented by a wheel or swatch picker
+date			Selector for calendar date
+datetime-local	Date and time display, with no setting or indication for time zones
+datetime		Full date and time display, including a time zone.
+email			Input type should be an email.
+month			Selector for a month within a given year
+number			A field containing a numeric value only
+range			Numeric selector within a range of values, typically visualized as a slider
+search			Term to supply to a search engine. For example, the search bar atop a browser.
+tel				Input type should be telephone number.
+time			Time indicator and selector, with no time zone information
+url				Input type should be URL type.
+week			Selector for a week within a given year
+        </pre>
       </div>
     </div>
   </div>
 
 
 
-
-
-
 </div>
+
+
+	<footer class="foter p-2">
+		<div class="container">
+			<p class="text-white text-center">Copyright by IMbibe | &copy 2022 | All Rights Reserved</p>
+		</div>
+	</footer>
+
 </body>
 </html>

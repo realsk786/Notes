@@ -3,16 +3,30 @@ body{
 	font-style: roboto;
 }
 
-.html-left{
-	width: 50%;
+.navvbar, .foter{
+	background-color: rgb(44, 62, 80);
 }
-.html-left h2{
-	font-size: 100px;
-	font-weight: 650;
 
+.logo{
+	font-size: 32px;
 }
-.html-right{
-	width: 50%;
+.logo-bibe{
+	color: #EDC7B7;
+	text-shadow: 2px 2px 4px #AC3B61;
+}
+.logo-im{
+	color: #AC3B61;
+	text-shadow: 2px 2px 4px #ee9ca7;
+}
+
+
+.banner-p{
+	color: blue;
+}
+.banner-h1, h1{
+	font-size: 52px;
+	text-shadow: 2px 2px 4px #ee9ca7;
+	color: #AC3B61;
 }
 
 .quote .card{
@@ -31,11 +45,18 @@ body{
 	font-size: 32px;
 }
 
+.cards-out{
+	background-image: url(../img/1.webp);
+	background-repeat: no-repeat;
+	object-fit: cover;
+}
+
 .cards .card{
-	height: 300px;
+	height: 250px;
+	width: 30%;
 	border: 2px solid #AC3B61;
 	box-shadow: 5px 5px 12px #BAB2B5;
-	border-radius: 120px 8px;
+	border-radius: 120px 40px 0px 20px;
 	overflow: hidden;
 }
 .cards .card:hover{
@@ -43,7 +64,7 @@ body{
 	transition: 0.4s ease;
 }
 .card-title{
-	font-size: 100px;
+	font-size: 58px;
 	font-weight: 450;
 	text-shadow: 4px 4px 8px #BAB2B5;
 }
@@ -62,7 +83,7 @@ body{
 	border: 1.5px solid #123C69;
 	color: #BAB2B5;
 	box-shadow: -2px -2px 5px lightgreen;
-	transform: scale(1.8);
+	transform: scale(1.25);
 	transition: 0.4s ease;
 }
 .cards .card-body{
