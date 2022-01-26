@@ -1,5 +1,5 @@
 body{
-	background-color: ivory;
+	/*background-color: ivory;*/
 	font-style: roboto;
 }
 
@@ -28,6 +28,13 @@ body{
 	text-shadow: 2px 2px 4px #ee9ca7;
 	color: #AC3B61;
 }
+.banner-h6{
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: .5px;
+    color: rgba(0, 0, 0, .6);
+    margin-top: 16px;
+}
 
 .quote .card{
 	border: 2px dotted #123C69;
@@ -46,12 +53,14 @@ body{
 }
 
 .cards-out{
-	background-image: url(../img/1.webp);
+	/*background-image: url(../img/1.webp);
 	background-repeat: no-repeat;
-	object-fit: cover;
+	object-fit: cover;*/
+	/*background-color: rgba(44, 62, 80, 0.5);*/
+	background-color: #4D8C57;
 }
 
-.cards .card{
+/*.card-group .card{
 	height: 250px;
 	width: 30%;
 	border: 2px solid #AC3B61;
@@ -62,9 +71,13 @@ body{
 .cards .card:hover{
 	transform: scale(1.1);
 	transition: 0.4s ease;
+}*/
+
+.card-group .card{
+	width: 25%;
 }
 .card-title{
-	font-size: 58px;
+	font-size: 54px;
 	font-weight: 450;
 	text-shadow: 4px 4px 8px #BAB2B5;
 }
@@ -89,4 +102,23 @@ body{
 .cards .card-body{
 	background: linear-gradient(#EDC7B7, #EEE2DC);
 	color: #AC3B61;
+}
+
+
+
+.pg-head{
+    background-color: #0b7ed2;
+    background-image: radial-gradient(circle at 78% 57%, cyan, #0b7ed2 24%, #0e58c5 36%, #0041a3 93%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pg-head-img img{
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    margin-bottom: -2px;
 }
