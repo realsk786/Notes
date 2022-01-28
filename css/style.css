@@ -7,6 +7,10 @@ body{
 	background-color: rgb(44, 62, 80);
 }
 
+.nav-item a.active{
+	background-color: #AC3B61;
+}
+
 .logo{
 	font-size: 32px;
 }
@@ -104,7 +108,19 @@ body{
 	color: #AC3B61;
 }
 
-
+.abft{
+	position: relative;
+}
+.abft-cnt{
+	position: absolute;
+	top: 28%;
+	left: 10%;
+	width: 400px;
+	border: 2px solid darkgrey;
+	border-radius: 30px;
+	box-shadow: 4px 4px 8px grey;
+	padding: 40px;
+}
 
 .pg-head{
     background-color: #0b7ed2;
